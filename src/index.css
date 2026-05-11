@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Base Layer ---- */
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: all 0.3s;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply font-brand antialiased;
+    }
+}
+
+/* ---- Components Layer ---- */
+@layer components {
+    .btn {
+        @apply px-4 py-2 rounded-lg font-semibold transition-colors;
+    }
+}
+
+/* ---- Utilities Layer ---- */
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1206px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
