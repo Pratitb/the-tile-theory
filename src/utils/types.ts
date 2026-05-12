@@ -18,3 +18,8 @@ export interface CategoryProps {
     title?: string
     includes?: string
 }
+
+export interface NavProps {
+    getActiveFn: (btnName: string) => void
+    activeSt?: string
+}
