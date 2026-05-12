@@ -23,3 +23,8 @@ export interface NavProps {
     getActiveFn: (btnName: string) => void
     activeSt?: string
 }
+export interface PillTabProps {
+    name?: string
+    getActivePill: (name: string) => void
+    activeSt: string
+}

@@ -18,3 +18,5 @@ export const categories: CategoryProps[] = [
     { title: 'kitchen slabs', includes: 'besides sink, platform...' },
     { title: 'bathroom slabs', includes: 'besides sink, platform...' },
 ]
+
+export const homePillTabs = ['indoor', 'outdoor', 'kitchen', 'bathroom']
