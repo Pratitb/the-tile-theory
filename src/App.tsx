@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive'
 import './App.css'
 import MobNav from './components/mobNav'
 import Banner from './components/banner'
-import { categories } from './utils/data'
+import { categories, homePillTabs } from './utils/data'
 import CategoryCard from './components/categoryCard'
 import type { CategoryProps } from './utils/types'
 import DesNav from './components/desNav'
@@ -10,6 +10,7 @@ import Button from './components/button'
 import Brand from './components/brand'
 import AOS from 'aos';
 import { useEffect, useState } from "react";
+import PillTab from './components/pillTab'
 
 
 const App = () => {
@@ -23,6 +24,11 @@ const App = () => {
   const [activeBtn, setActiveBtn] = useState('home')
   const handleActiveBtn = (btnName: string) => {
     setActiveBtn(btnName)
+  }
+
+  const [activePill, setActivePill] = useState('indoor')
+  const handleActivePill = (name: string) => {
+    setActivePill(name)
   }
 
   return (
@@ -50,7 +56,9 @@ const App = () => {
       {/* Applications */}
       <div className='mt-12 flex flex-col gap-6'>
         <p className='head'>applications</p>
-
+        <div className='flex gap-4 max-w-fit overflow-x-auto'>
+          {homePillTabs?.map((pill: string) => <PillTab name={pill} getActivePill={handleActivePill} activeSt={activePill} />)}
+        </div>
       </div>
     </div>
   )
