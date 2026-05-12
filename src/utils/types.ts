@@ -28,3 +28,21 @@ export interface PillTabProps {
     getActivePill: (name: string) => void
     activeSt: string
 }
+
+export interface TileProductKeys {
+    id?: number,
+    name?: string,
+    sizes?: string[],
+    type?: string,
+    quality?: string,
+    category?: string
+    imageUrl?: string
+}
+
+export interface ProductCardProps {
+    imageUrl?: string,
+    name?: string,
+    type?: string,
+    sizes?: string[],
+    quality?: string
+}
