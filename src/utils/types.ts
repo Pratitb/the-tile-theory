@@ -46,3 +46,7 @@ export interface ProductCardProps {
     sizes?: string[],
     quality?: string
 }
+
+export interface BottomBannerProps {
+    quote?: string
+}
