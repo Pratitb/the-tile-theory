@@ -2,7 +2,7 @@ import { useMediaQuery } from 'react-responsive'
 import './App.css'
 import MobNav from './components/mobNav'
 import Banner from './components/banner'
-import { categories, homePillTabs, tileProducts } from './utils/data'
+import { categories, homePillTabs, quote2Text, quoteText, tileProducts } from './utils/data'
 import CategoryCard from './components/categoryCard'
 import type { CategoryProps, ProductCardProps, TileProductKeys } from './utils/types'
 import DesNav from './components/desNav'
@@ -13,6 +13,7 @@ import { useEffect, useMemo, useState } from "react";
 import PillTab from './components/pillTab'
 import ProductCard from './components/productCard'
 import BottomBanner from './components/bottomBanner'
+import Footer from './components/footer'
 
 const App = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 767px)' })
@@ -75,9 +76,10 @@ const App = () => {
       </div>
       {/* Bottom Banner */}
       <div className='flex flex-col gap-4 md:flex-row'>
-        <BottomBanner quote={'Best quality, wide range products, trust, and end to end pre and post sales service'} />
-        <BottomBanner quote={'We deliver to all major states of Australia (multiple options)'} />
+        <BottomBanner quote={quoteText} />
+        <BottomBanner quote={quote2Text} />
       </div>
+      <Footer />
     </div>
   )
 }
