@@ -94,7 +94,7 @@ export const tileProducts: TileProductKeys[] = [
     }
 ];
 
-export const quoteText = `Best quality, wide range products, trust, and end to end pre and post sales service.`
+export const quoteText = `Best quality, wide range of products, trust, and end to end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
 
 
