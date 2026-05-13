@@ -12,6 +12,7 @@ import AOS from 'aos';
 import { useEffect, useMemo, useState } from "react";
 import PillTab from './components/pillTab'
 import ProductCard from './components/productCard'
+import BottomBanner from './components/bottomBanner'
 
 const App = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 767px)' })
@@ -68,9 +69,14 @@ const App = () => {
           {homePillTabs?.map((pill: string) => <PillTab key={pill} name={pill} getActivePill={handleActivePill} activeSt={activePill} />)}
         </div>
         {/* cards */}
-        <div className='flex gap-4 max-w-fit overflow-x-auto'>
+        <div className='flex gap-4 max-w-fit overflow-x-auto mb-8'>
           {activePillData?.map((tile: ProductCardProps) => <ProductCard key={tile?.name} imageUrl={tile?.imageUrl} name={tile?.name} type={tile?.type} sizes={tile?.sizes} quality={tile?.quality} />)}
         </div>
+      </div>
+      {/* Bottom Banner */}
+      <div className='flex flex-col gap-4 md:flex-row'>
+        <BottomBanner quote={'Best quality, wide range products, trust, and end to end pre and post sales service'} />
+        <BottomBanner quote={'We deliver to all major states of Australia (multiple options)'} />
       </div>
     </div>
   )
