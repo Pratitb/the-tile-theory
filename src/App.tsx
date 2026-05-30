@@ -9,42 +9,46 @@ import DesNav from './components/desNav'
 import Button from './components/button'
 import Brand from './components/brand'
 import AOS from 'aos';
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import PillTab from './components/pillTab'
 import ProductCard from './components/productCard'
 import BottomBanner from './components/bottomBanner'
 import Footer from './components/footer'
 
 const App = () => {
-  const isDesktop = useMediaQuery({ query: '(min-width: 767px)' })
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   const [activeBtn, setActiveBtn] = useState('home')
+  const [activePill, setActivePill] = useState('all')
+  const [allTiles,] = useState<TileProductKeys[]>(tileProducts)
+  const isDesktop = useMediaQuery({ query: '(min-width: 767px)' })
+  const homeCategories = useRef<HTMLDivElement | null>(null)
+  const homeApplications = useRef<HTMLDivElement | null>(null)
+
+  const handleCategoriesBtn = () => {
+    if (homeCategories && homeCategories.current) homeCategories?.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+  const handleApplicationsBtn = () => {
+    if (homeApplications && homeApplications.current) homeApplications?.current?.scrollIntoView({ behavior: 'smooth' })
+  }
   const handleActiveBtn = (btnName: string) => {
     setActiveBtn(btnName)
   }
-
-  const [activePill, setActivePill] = useState('indoor')
   const handleActivePill = (name: string) => {
     setActivePill(name)
   }
-
-  const [allTiles,] = useState<TileProductKeys[]>(tileProducts)
-
   const activePillData = useMemo(() => {
     if (activePill === 'all') return allTiles
     const filterActiveData = allTiles?.filter((tile) => tile?.type?.toLowerCase()?.includes(activePill?.toLowerCase()))
     return filterActiveData
   }, [allTiles, activePill])
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className='flex flex-col gap-4 container'>
       {!isDesktop && <MobNav getActiveFn={handleActiveBtn} activeSt={activeBtn} />}
 
-      {/* brand, des nav, quote */}
+      {/* Brand, Desk Nav, Quote */}
       <div className='flex justify-between items-center'>
         <Brand />
         {isDesktop && <DesNav getActiveFn={handleActiveBtn} activeSt={activeBtn} />}
@@ -52,10 +56,10 @@ const App = () => {
       </div>
 
       {/* Banner */}
-      <Banner />
+      <Banner getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
 
       {/* Categories */}
-      <div className='mt-12 flex flex-col gap-6'>
+      <div className='pt-12 flex flex-col gap-6' ref={homeCategories}>
         <p className='head'>categories</p>
         <div className='flex overflow-x-auto gap-6'>
           {categories?.map((item: CategoryProps) => <CategoryCard key={item?.title} title={item?.title} includes={item?.includes} />)}
@@ -63,7 +67,7 @@ const App = () => {
       </div>
 
       {/* Applications */}
-      <div className='mt-12 flex flex-col gap-6'>
+      <div className='pt-12 flex flex-col gap-6' ref={homeApplications}>
         <p className='head'>applications</p>
         {/* pills */}
         <div className='flex gap-2 max-w-fit overflow-x-auto'>
@@ -75,7 +79,7 @@ const App = () => {
         </div>
       </div>
       {/* Bottom Banner */}
-      <div className='flex flex-col gap-4 md:flex-row'>
+      <div className='flex flex-col gap-4 md:flex-row md:justify-center'>
         <BottomBanner quote={quoteText} />
         <BottomBanner quote={quote2Text} />
       </div>
