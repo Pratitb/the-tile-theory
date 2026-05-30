@@ -10,6 +10,7 @@ export interface ButtonProps {
     btnName?: string
     leadingIcon?: ReactNode
     variation?: BtnVariations
+    getActionFn?: () => void
 }
 
 export type BtnVariations = 'primary'
@@ -49,4 +50,9 @@ export interface ProductCardProps {
 
 export interface BottomBannerProps {
     quote?: string
+}
+
+export interface BannerProps {
+    getCategoriesScrollFn?: () => void
+    getApplicationScrollFn?: () => void
 }
