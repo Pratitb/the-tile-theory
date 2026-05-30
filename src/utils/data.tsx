@@ -27,7 +27,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "indoor",
         quality: "luxury",
         category: "indoor",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 2,
@@ -36,7 +36,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "outdoor",
         quality: "budget",
         category: "outdoor",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 3,
@@ -45,7 +45,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "kitchen slabs",
         quality: "luxury",
         category: "kitchen slabs",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 4,
@@ -54,7 +54,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "bathroom slabs",
         quality: "premium",
         category: "bathroom slabs",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 5,
@@ -63,7 +63,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "indoor",
         quality: "premium",
         category: "indoor",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 6,
@@ -72,7 +72,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "outdoor",
         quality: "budget",
         category: "outdoor",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "kitchen slabs",
         quality: "luxury",
         category: "kitchen slabs",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     },
     {
         id: 8,
@@ -90,7 +90,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "bathroom slabs",
         quality: "budget",
         category: "bathroom slabs",
-        imageUrl: "/banner-3.jpeg"
+        imageUrl: "banner-3.jpeg"
     }
 ];
 
