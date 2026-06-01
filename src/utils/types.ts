@@ -35,6 +35,7 @@ export interface TileProductKeys {
     name?: string,
     sizes?: string[],
     type?: string,
+    desc?: string
     quality?: string,
     category?: string
     imageUrl?: string
@@ -44,6 +45,7 @@ export interface ProductCardProps {
     imageUrl?: string,
     name?: string,
     type?: string,
+    desc?: string
     sizes?: string[],
     quality?: string
 }
@@ -55,4 +57,24 @@ export interface BottomBannerProps {
 export interface BannerProps {
     getCategoriesScrollFn?: () => void
     getApplicationScrollFn?: () => void
+}
+
+export interface PillsProps {
+    getPills?: string[]
+    getActivePill?: (name: string) => void
+    activeSt?: string
+    name?: string
+}
+
+export interface ApplicationsProps {
+    head?: string
+    getApplicationData?: ProductCardProps[]
+}
+
+export interface ApplicationCardProps {
+    imageUrl?: string
+    name?: string
+    quality?: string
+    type?: string
+    desc?: string
 }
