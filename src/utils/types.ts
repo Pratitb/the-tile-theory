@@ -1,10 +1,5 @@
 import type { ReactNode } from "react"
 
-export interface NavLinkKeys {
-    name?: string
-    icon?: ReactNode
-}
-
 export interface ButtonProps {
     trailingIcon?: ReactNode
     btnName?: string
@@ -55,6 +50,7 @@ export interface BottomBannerProps {
 }
 
 export interface BannerProps {
+    bannerText?: string
     getCategoriesScrollFn?: () => void
     getApplicationScrollFn?: () => void
 }

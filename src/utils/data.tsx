@@ -1,16 +1,7 @@
-import { GoHome } from "react-icons/go";
-import type { CategoryProps, NavLinkKeys, TileProductKeys } from "./types";
-import { MdContacts } from "react-icons/md";
-import { FaRegBuilding } from "react-icons/fa";
-import { GiPlatform } from "react-icons/gi";
+import type { CategoryProps, TileProductKeys } from "./types";
 
-
-export const navLinks: NavLinkKeys[] = [
-    { name: 'home', icon: <GoHome /> },
-    { name: 'tiles', icon: <GiPlatform /> },
-    { name: 'contact', icon: <MdContacts /> },
-    { name: 'about', icon: <FaRegBuilding /> },
-]
+export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
+export const tileLinks: string[] = ['indoor', 'outdoor', 'bathroom & kitchen slabs']
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...' },
@@ -111,5 +102,7 @@ export const tileProducts: TileProductKeys[] = [
 
 export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
+export const homeBannerText = `If you're looking for the best tiles in Australia, you're at the right place.`
+export const indoorBannerText = `Find the best tiles for your indoor setting`
 
 
