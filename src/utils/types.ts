@@ -13,12 +13,15 @@ export type BtnVariations = 'primary'
 export interface CategoryProps {
     title?: string
     includes?: string
+    page: string
 }
 
-export interface NavProps {
-    getActiveFn: (btnName: string) => void
-    activeSt?: string
+export interface CategoryCardProps {
+    title?: string
+    includes?: string
+    link: string
 }
+
 export interface PillTabProps {
     name?: string
     getActivePill: (name: string) => void
@@ -34,6 +37,7 @@ export interface TileProductKeys {
     quality?: string,
     category?: string
     imageUrl?: string
+    pdfUrl?: string
 }
 
 export interface ProductCardProps {
@@ -43,23 +47,11 @@ export interface ProductCardProps {
     desc?: string
     sizes?: string[],
     quality?: string
+    pdf?: string
 }
 
 export interface BottomBannerProps {
     quote?: string
-}
-
-export interface BannerProps {
-    bannerText?: string
-    getCategoriesScrollFn?: () => void
-    getApplicationScrollFn?: () => void
-}
-
-export interface PillsProps {
-    getPills?: string[]
-    getActivePill?: (name: string) => void
-    activeSt?: string
-    name?: string
 }
 
 export interface ApplicationsProps {
