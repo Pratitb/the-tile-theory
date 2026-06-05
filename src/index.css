@@ -30,32 +30,44 @@
         @apply text-2xl capitalize font-medium
     }
 
-    .product_name {
-        @apply text-xl leading-6
-    }
-
-    .product_type {
-        @apply text-secondaryText grow
-    }
-
     .product_card {
-        @apply w-full min-w-[220px] max-w-[220px] md:min-w-[330px] lg:min-w-[380px] xl:min-w-[400px] rounded-lg border px-2 py-2 relative flex flex-col gap-2
+        @apply w-full flex-1 min-w-[200px] md:min-w-[250px] lg:min-w-[32%] max-w-[300px] rounded-lg border px-2 py-2 relative flex flex-col gap-2
     }
 
     .product_image {
         @apply rounded-lg object-cover object-center
     }
 
-    .product_details {
-        @apply flex flex-col lg:min-h-fit bg-lightBg rounded-lg px-3 py-4 font-semibold capitalize
+    .product_quality {
+        @apply absolute top-5 right-5 bg-black text-white text-xs md:text-sm lg:text-base capitalize rounded-lg px-2 py-1 md:px-3
     }
 
-    .product_quality {
-        @apply absolute top-5 right-5 bg-black text-white text-sm capitalize xl:text-base rounded-lg px-2 py-1 md:px-3
+    .product_details {
+        @apply flex flex-col min-h-[155px] font-semibold capitalize bg-lightBg rounded-lg px-3 py-4
+    }
+
+    .product_name {
+        @apply text-base md:text-lg lg:text-xl leading-6
+    }
+
+    .product_type {
+        @apply text-secondaryText grow
+    }
+
+    .product_size {
+        @apply border rounded-full px-2 py-1 lg:px-3 text-secondaryText text-xs md:text-sm lg:text-base
     }
 
     .product_desc {
         @apply text-black font-normal
+    }
+
+    .application_details {
+        @apply flex flex-col font-semibold capitalize bg-lightBg rounded-lg px-3 py-4
+    }
+
+    .highlight {
+        @apply text-yellow-600
     }
 }
 
