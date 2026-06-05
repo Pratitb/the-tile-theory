@@ -48,12 +48,12 @@ const Home = () => {
     return (
         <div className='flex flex-col gap-4'>
             {/* Banner */}
-            <Banner bannerText={homeBannerText} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
+            <Banner categ apps bannerText={homeBannerText} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
             {/* Categories */}
             <div className='pt-12 flex flex-col gap-6' ref={homeCategories}>
                 <p className='head'>categories</p>
                 <div className='flex overflow-x-auto gap-6'>
-                    {categories?.map((item: CategoryProps) => <CategoryCard key={item?.title} title={item?.title} includes={item?.includes} />)}
+                    {categories?.map((item: CategoryProps) => <CategoryCard key={item?.title} title={item?.title} includes={item?.includes} link={item.page} />)}
                 </div>
             </div>
             {/* Applications */}
