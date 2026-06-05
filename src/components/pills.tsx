@@ -1,4 +1,9 @@
-import type { PillsProps } from '../utils/types'
+
+interface PillsProps {
+    getPills: string[]
+    getActivePill: (name: string) => void
+    activeSt: string
+}
 
 const Pills = ({ getPills, getActivePill, activeSt }: PillsProps) => {
     return (
