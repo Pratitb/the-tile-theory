@@ -1,7 +1,7 @@
 import './App.css'
 import { useEffect } from 'react'
 import AOS from 'aos';
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, HashRouter } from 'react-router-dom'
 import Home from './pages/Home'
 // import Tiles from './pages/Tiles';
 import Contact from './pages/Contact';
@@ -42,18 +42,20 @@ const App = () => {
   }, [location.pathname, updateActivePage, updateActiveTile])
 
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route index path='/home' element={<Home />} />
-        {/* <Route path='/tiles' element={<Tiles />} /> */}
-        <Route path='/tiles/indoor' element={<Indoor />} />
-        <Route path='/tiles/outdoor' element={<Outdoor />} />
-        <Route path='/tiles/slabs' element={<Slabs />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/about' element={<About />} />
-      </Route>
-    </Routes>
+    <HashRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route index path='/home' element={<Home />} />
+          {/* <Route path='/tiles' element={<Tiles />} /> */}
+          <Route path='/tiles/indoor' element={<Indoor />} />
+          <Route path='/tiles/outdoor' element={<Outdoor />} />
+          <Route path='/tiles/slabs' element={<Slabs />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   )
 }
 
