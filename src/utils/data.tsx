@@ -152,7 +152,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "High-reflection vitrified tile with a deep, mirror-like amber glaze.",
         quality: "Premium",
         category: "glossy",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -163,7 +163,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Classic stark white gloss finish designed to maximize ambient lighting.",
         quality: "Standard",
         category: "glossy",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -176,7 +176,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Ultra-high gloss glaze delivering an uncompromised, zero-distortion reflective finish.",
         quality: "Luxury",
         category: "ultra high glossy",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -187,7 +187,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Advanced protective coating over an ultra-glossy surface for heavy residential foot traffic.",
         quality: "Premium",
         category: "ultra high glossy",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -200,7 +200,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Understated industrial concrete style with a slip-resistant matt texture.",
         quality: "Standard",
         category: "matt series",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -211,7 +211,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Sleek, glare-free dark slate finish providing high traction and easy cleaning.",
         quality: "Premium",
         category: "matt series",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -224,7 +224,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Features microscopic linear incisions that trace natural timber grain routes.",
         quality: "Premium",
         category: "carving series",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -235,7 +235,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Delicate surface carving structures that shimmer softly under targeted spotlighting.",
         quality: "Premium",
         category: "carving series",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -248,7 +248,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Intricate, repetitive relief patterns etched directly into high-grade porcelain.",
         quality: "Luxury",
         category: "carving decor",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -259,7 +259,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Classical ornamental motifs enhanced with modern surface carving mechanics.",
         quality: "Premium",
         category: "carving decor",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -272,7 +272,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Infused with crystalline granules that mimic natural gemstone light-refraction.",
         quality: "Luxury",
         category: "diamond collection",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -283,7 +283,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Diamond-grade hardness scratch-resistant coating featuring subtle luminous flecks.",
         quality: "Luxury",
         category: "diamond collection",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -296,7 +296,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Homogeneous speckling profile delivering a structured granulate stone aesthetic.",
         quality: "Standard",
         category: "granula",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -307,7 +307,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Multi-tonal micro-granules fired uniformly for rugged dependability.",
         quality: "Premium",
         category: "granula",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -320,7 +320,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Heavy structural unevenness (punch) replicating weather-worn ancient European stone.",
         quality: "Standard",
         category: "rustic punch",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -331,7 +331,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Deep pits and rough textures mimicking corroded metallic plates.",
         quality: "Premium",
         category: "rustic punch",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -344,7 +344,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Bold, stark grey structural veins flowing organically across a milk-white base.",
         quality: "Luxury",
         category: "statuario",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -355,7 +355,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Fine, feathered marble fissures delivering a timeless luxury Italian architecture look.",
         quality: "Premium",
         category: "statuario",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
 
@@ -368,7 +368,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Fired with a subtle, multi-chromatic metallic sheen that shifts colors depending on your viewing angle.",
         quality: "Luxury",
         category: "rainbow",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     },
     {
@@ -379,7 +379,7 @@ export const indoorProducts: TileProductKeys[] = [
         desc: "Soft, flowing linear gradients blending warm and cool pastel hues together dynamically.",
         quality: "Premium",
         category: "rainbow",
-        imageUrl: "/banner-3.jpeg",
+        imageUrl: "banner-3.jpeg",
         pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     }
 ]
