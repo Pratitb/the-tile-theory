@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from "react"
 import Banner from "../components/banner"
 import { indoorPills, indoorProducts, scrollSection } from "../utils/data"
-import ProductShowcase from "../components/ProductShowcase"
+import ProductShowcase from "../components/productShowcase"
 
 const Slabs = () => {
     const slabsShowcase = useRef<HTMLDivElement | null>(null)
