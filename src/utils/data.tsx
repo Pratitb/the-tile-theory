@@ -1,16 +1,29 @@
 import type { RefObject } from "react";
 import type { CategoryProps, TileProductKeys } from "./types";
 
+export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
+export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
+export const homeBannerText1 = `If you're looking for the`
+export const homeBannerText2 = `best tiles in australia,`
+export const homeBannerText3 = `you're at the right place.`
+export const indoorBannerText = `Find the best tiles for your indoor setting`
+
+export const tiles1 = `welcome to`
+export const indoorBanner2 = `indoor tiles.`
+export const outdoorBanner2 = `outdoor tiles.`
+export const slabs2 = `slab tiles.`
+export const tiles3 = `find all types of premium tiles here.`
+
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: string[] = ['indoor', 'outdoor', 'bathroom & kitchen slabs']
+export const homePillTabs = ['indoor', 'outdoor', 'bathroom & kitchen',]
+export const indoorPills = ['all', 'glossy', 'matt series', 'diamond collection', 'kitkat', 'limestone', 'nexa', 'pizzaro', 'weber', 'carving', 'linear', 'rustic']
+
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...', page: '/tiles/outdoor' },
     { title: 'bathroom & kitchen slabs', includes: 'besides sink, platform...', page: '/tiles/slabs' },
 ]
-export const homePillTabs = ['indoor', 'outdoor', 'bathroom & kitchen',]
-export const indoorPills = ['all', 'glossy', 'ultra high glossy', 'matt series', 'carving series', 'carving decor', 'diamond collection', 'granula', 'rustic punch', 'statuario', 'rainbow']
-
 export const tileProducts: TileProductKeys[] = [
     {
         id: 1,
@@ -18,7 +31,7 @@ export const tileProducts: TileProductKeys[] = [
         sizes: ["6mm", "9mm", "12mm"],
         type: "indoor",
         desc: "A beautiful setup of tiles",
-        quality: "luxury",
+        quality: "premium",
         category: "indoor",
         imageUrl: "banner-3.jpeg"
     },
@@ -40,7 +53,7 @@ export const tileProducts: TileProductKeys[] = [
         type: "slabs",
         desc: "A beautiful setup of tiles",
 
-        quality: "luxury",
+        quality: "premium",
         category: " slabs",
         imageUrl: "banner-3.jpeg"
     },
@@ -77,318 +90,233 @@ export const tileProducts: TileProductKeys[] = [
         category: "outdoor",
         imageUrl: "banner-3.jpeg"
     },
-    {
-        id: 7,
-        name: "Statuary White Marble",
-        sizes: ["6mm", "9mm", "12mm"],
-        type: "indoor",
-        desc: "A beautiful setup of tiles",
-        quality: "luxury",
-        category: "indoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 8,
-        name: "Rustic Slate Grey",
-        sizes: ["9mm", "12mm"],
-        type: "outdoor",
-        desc: "A beautiful setup of tiles",
 
-        quality: "budget",
-        category: "outdoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 9,
-        name: "Calacatta Gold Quartz",
-        sizes: ["12mm"],
-        type: "slabs",
-        desc: "A beautiful setup of tiles",
 
-        quality: "luxury",
-        category: " slabs",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 10,
-        name: "Statuary White Marble",
-        sizes: ["6mm", "9mm", "12mm"],
-        type: "indoor",
-        desc: "A beautiful setup of tiles",
-        quality: "luxury",
-        category: "indoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 11,
-        name: "Rustic Slate Grey",
-        sizes: ["9mm", "12mm"],
-        type: "outdoor",
-        desc: "A beautiful setup of tiles",
-
-        quality: "budget",
-        category: "outdoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 12,
-        name: "Calacatta Gold Quartz",
-        sizes: ["12mm"],
-        type: "slabs",
-        desc: "A beautiful setup of tiles",
-
-        quality: "luxury",
-        category: " slabs",
-        imageUrl: "banner-3.jpeg"
-    },
 ];
 export const indoorProducts: TileProductKeys[] = [
     // 1. GLOSSY
     {
         id: 1,
-        name: "Liquid Amber Polish",
-        sizes: ["6mm", "9mm", "12mm"],
+        name: "glossy vol 1",
+        sizes: ["6mm", "12mm"],
         type: "Indoor",
-        desc: "High-reflection vitrified tile with a deep, mirror-like amber glaze.",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger. The ultimate choice for a luxurious, high-end polished look.",
         quality: "Premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-1.pdf"
     },
     {
         id: 2,
-        name: "Crystal White Gloss",
+        name: "glossy vol 2",
         sizes: ["6mm", "9mm"],
         type: "Indoor",
-        desc: "Classic stark white gloss finish designed to maximize ambient lighting.",
-        quality: "Standard",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger. The ultimate choice for a luxurious, high-end polished look.",
+        quality: "premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-2.pdf"
     },
-
-    // 2. ULTRA HIGH GLOSSY
     {
         id: 3,
-        name: "Obsidian Mirror",
-        sizes: ["9mm", "12mm"],
+        name: "glossy vol 3",
+        sizes: ["6mm", "9mm"],
         type: "Indoor",
-        desc: "Ultra-high gloss glaze delivering an uncompromised, zero-distortion reflective finish.",
-        quality: "Luxury",
-        category: "ultra high glossy",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger. The ultimate choice for a luxurious, high-end polished look.",
+        quality: "premium",
+        category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-3.pdf"
     },
     {
         id: 4,
-        name: "Super Vitrified Platinum",
-        sizes: ["6mm", "9mm", "12mm"],
+        name: "ultra high glossy",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Advanced protective coating over an ultra-glossy surface for heavy residential foot traffic.",
-        quality: "Premium",
-        category: "ultra high glossy",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger. The ultimate choice for a luxurious, high-end polished look.",
+        quality: "premium",
+        category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-ultra-high-glossy.pdf"
     },
-
-    // 3. MATT SERIES
     {
         id: 5,
-        name: "Concrete Ash Matt",
-        sizes: ["6mm", "9mm"],
+        name: "glossy decor",
+        sizes: ["6mm", "9mm", "12mm"],
         type: "Indoor",
-        desc: "Understated industrial concrete style with a slip-resistant matt texture.",
-        quality: "Standard",
-        category: "matt series",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger. The ultimate choice for a luxurious, high-end polished look.",
+        quality: "Premium",
+        category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-glossy-decor.pdf"
     },
+
+    // 2. MATT SERIES
     {
         id: 6,
-        name: "Soft Charcoal Matt",
-        sizes: ["9mm", "12mm"],
+        name: "matt",
+        sizes: ["6mm", "9mm"],
         type: "Indoor",
-        desc: "Sleek, glare-free dark slate finish providing high traction and easy cleaning.",
-        quality: "Premium",
-        category: "matt series",
+        desc: "A sophisticated, non-reflective surface that offers a soft touch. Perfect for contemporary interiors seeking a calm, understated elegance.",
+        quality: "premium",
+        category: "matt",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-matt.pdf"
     },
-
-    // 4. CARVING SERIES
+    // 3. DIAMOND COLLECTION
     {
         id: 7,
-        name: "Veinwood Oak Carved",
+        name: "diamond collection",
         sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Features microscopic linear incisions that trace natural timber grain routes.",
-        quality: "Premium",
-        category: "carving series",
+        desc: "Features a unique geometric texture that captures light at every angle. Adds a distinct 3D architectural depth to feature walls and floors.",
+        quality: "premium",
+        category: "diamond",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-diamond-punch.pdf"
     },
+    // 4. KITKAT PUNCH
     {
         id: 8,
-        name: "Silk Route Ivory",
-        sizes: ["6mm", "9mm"],
+        name: "kitkat punch",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Delicate surface carving structures that shimmer softly under targeted spotlighting.",
-        quality: "Premium",
-        category: "carving series",
+        desc: "Inspired by trendy mosaic strips, providing a sleek, rhythmic pattern. Ideal for modern backsplashes and bathroom accents with a slim profile.",
+        quality: "premium",
+        category: "kitkat",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-kitkat-punch.pdf"
     },
-
-    // 5. CARVING DECOR
+    // 5. LIMESTONE PUNCH
     {
         id: 9,
-        name: "Geometric Mandala Carve",
-        sizes: ["6mm", "9mm", "12mm"],
+        name: "limestone punch",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Intricate, repetitive relief patterns etched directly into high-grade porcelain.",
-        quality: "Luxury",
-        category: "carving decor",
+        desc: "Replicates the raw, organic texture of natural quarried limestone. Brings an earthy, rustic charm with the durability of premium porcelain.",
+        quality: "premium",
+        category: "limestone",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-limestone-punch.pdf"
     },
+    // 6. RAINBOW SERIES
     {
         id: 10,
-        name: "Vintage Damask Relief",
-        sizes: ["6mm", "9mm"],
+        name: "rainbow series",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Classical ornamental motifs enhanced with modern surface carving mechanics.",
-        quality: "Premium",
-        category: "carving decor",
+        desc: "A vibrant collection featuring a playful spectrum of tones and hues. Designed for creative spaces that need a bold, energetic personality.",
+        quality: "premium",
+        category: "rainbow",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-rainbow-series.pdf"
     },
-
-    // 6. DIAMOND COLLECTION
+    // 7. STATUARIO
     {
         id: 11,
-        name: "Adamas Sparkle",
+        name: "statuario",
         sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Infused with crystalline granules that mimic natural gemstone light-refraction.",
-        quality: "Luxury",
-        category: "diamond collection",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-    {
-        id: 12,
-        name: "Quartzite Shimmer Luxe",
-        sizes: ["6mm", "9mm", "12mm"],
-        type: "Indoor",
-        desc: "Diamond-grade hardness scratch-resistant coating featuring subtle luminous flecks.",
-        quality: "Luxury",
-        category: "diamond collection",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-
-    // 7. GRANULA
-    {
-        id: 13,
-        name: "Sandstone Granula Grey",
-        sizes: ["9mm", "12mm"],
-        type: "Indoor",
-        desc: "Homogeneous speckling profile delivering a structured granulate stone aesthetic.",
-        quality: "Standard",
-        category: "granula",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-    {
-        id: 14,
-        name: "Granite Fleck Beige",
-        sizes: ["6mm", "9mm"],
-        type: "Indoor",
-        desc: "Multi-tonal micro-granules fired uniformly for rugged dependability.",
-        quality: "Premium",
-        category: "granula",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-
-    // 8. RUSTIC PUNCH
-    {
-        id: 15,
-        name: "Tuscan Terracotta Punch",
-        sizes: ["9mm", "12mm"],
-        type: "Indoor",
-        desc: "Heavy structural unevenness (punch) replicating weather-worn ancient European stone.",
-        quality: "Standard",
-        category: "rustic punch",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-    {
-        id: 16,
-        name: "Ironclad Oxide Punch",
-        sizes: ["6mm", "9mm", "12mm"],
-        type: "Indoor",
-        desc: "Deep pits and rough textures mimicking corroded metallic plates.",
-        quality: "Premium",
-        category: "rustic punch",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    },
-
-    // 9. STATUARIO
-    {
-        id: 17,
-        name: "Statuario Imperial",
-        sizes: ["6mm", "9mm", "12mm"],
-        type: "Indoor",
-        desc: "Bold, stark grey structural veins flowing organically across a milk-white base.",
-        quality: "Luxury",
+        desc: "Classic white marble aesthetics with iconic, sweeping grey veining. Timeless luxury that brings the prestige of Italian stone to your home.",
+        quality: "premium",
         category: "statuario",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-statuario.pdf"
+    },
+    // 8. GRANULA
+    {
+        id: 12,
+        name: "granula",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Characterized by fine, speckled grains for a rich, textured appearance. A versatile finish that masks wear while maintaining a premium feel.",
+        quality: "premium",
+        category: "granula",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-granula.pdf"
+    },
+    // 9. NEXA
+    {
+        id: 13,
+        name: "nexa punch",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Advanced precision textures that offer a sharp, high-definition finish. A futuristic choice for those seeking cutting-edge interior design.",
+        quality: "premium",
+        category: "nexa",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-nexa-punch.pdf"
+    },
+    // 10. PIZZARO
+    {
+        id: 14,
+        name: "pizzaro punch",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Bold, deep-set textures inspired by rugged Mediterranean stone. Provides a strong tactile experience with a sophisticated, aged look.",
+        quality: "premium",
+        category: "pizzaro",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-pizzaro-punch.pdf"
+    },
+    // 11. WEBER
+    {
+        id: 15,
+        name: "weber punch",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Subtle, refined indentations that create a gentle play of shadow. Perfectly balanced for large-scale flooring with a modern industrial edge.",
+        quality: "premium",
+        category: "weber",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-weber-punch.pdf"
+    },
+    // 12. CARVING
+    {
+        id: 16,
+        name: "carving decor",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Specialized \"vein- matching\" texture that follows the natural marble print. Feel the grooves of the stone for an incredibly realistic luxury finish.",
+        quality: "premium",
+        category: "carving",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-carving-decor.pdf"
+    },
+    {
+        id: 17,
+        name: "2X carving",
+        sizes: ["9mm", "12mm"],
+        type: "Indoor",
+        desc: "Specialized \"vein- matching\" texture that follows the natural marble print. Feel the grooves of the stone for an incredibly realistic luxury finish.",
+        quality: "premium",
+        category: "carving",
+        imageUrl: "banner-3.jpeg",
+        pdfUrl: "/catalogues/indoor/ttt-carving.pdf"
     },
     {
         id: 18,
-        name: "Classic Statuario Venato",
-        sizes: ["6mm", "9mm"],
+        name: "linear punch",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Fine, feathered marble fissures delivering a timeless luxury Italian architecture look.",
-        quality: "Premium",
-        category: "statuario",
+        desc: "Clean, linear grooves that provide a sense of direction and height. Excellent for modernizing hallways or creating sleek bathroom walls.",
+        quality: "premium",
+        category: "linear",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-linear-punch.pdf"
     },
-
-    // 10. RAINBOW
     {
         id: 19,
-        name: "Spectrum Iridescent",
-        sizes: ["6mm", "9mm", "12mm"],
+        name: "rustic punch",
+        sizes: ["9mm", "12mm"],
         type: "Indoor",
-        desc: "Fired with a subtle, multi-chromatic metallic sheen that shifts colors depending on your viewing angle.",
-        quality: "Luxury",
-        category: "rainbow",
+        desc: "Weathered textures that celebrate the beauty of imperfection. Brings a cozy, farmhouse-style warmth to any indoor living area.",
+        quality: "premium",
+        category: "rustic",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        pdfUrl: "/catalogues/indoor/ttt-rustic-punch.pdf"
     },
-    {
-        id: 20,
-        name: "Aurora Pastel Streak",
-        sizes: ["6mm", "9mm"],
-        type: "Indoor",
-        desc: "Soft, flowing linear gradients blending warm and cool pastel hues together dynamically.",
-        quality: "Premium",
-        category: "rainbow",
-        imageUrl: "banner-3.jpeg",
-        pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-    }
 ]
-
-export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
-export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
-export const homeBannerText = `If you're looking for the best tiles in Australia, you're at the right place.`
-export const indoorBannerText = `Find the best tiles for your indoor setting`
-
 
 export const scrollSection = (refElement: RefObject<HTMLDivElement | null>) => {
     if (refElement && refElement.current) refElement.current.scrollIntoView({ behavior: 'smooth' })

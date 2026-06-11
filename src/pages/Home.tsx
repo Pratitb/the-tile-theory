@@ -1,7 +1,7 @@
 
 import { useRef, useState } from 'react'
 import type { CategoryProps, TileProductKeys } from '../utils/types'
-import { categories, homeBannerText, homePillTabs, quote2Text, quoteText, tileProducts } from '../utils/data'
+import { categories, homeBannerText1, homeBannerText2, homeBannerText3, homePillTabs, quote2Text, quoteText, tileProducts } from '../utils/data'
 import Banner from '../components/banner'
 import CategoryCard from '../components/categoryCard'
 import Pills from '../components/pills'
@@ -48,7 +48,7 @@ const Home = () => {
     return (
         <div className='flex flex-col gap-4'>
             {/* Banner */}
-            <Banner categ apps bannerText={homeBannerText} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
+            <Banner categ apps text1={homeBannerText1} text2={homeBannerText2} text3={homeBannerText3} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
             {/* Categories */}
             <div className='pt-12 flex flex-col gap-6' ref={homeCategories}>
                 <p className='head'>categories</p>
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
             </div>
             {/* Bottom Banner */}
-            <div className='flex gap-4 md:flex-row md:justify-center'>
+            <div className='flex flex-col gap-4 sm:flex-row'>
                 <BottomBanner quote={quoteText} />
                 <BottomBanner quote={quote2Text} />
             </div>

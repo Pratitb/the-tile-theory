@@ -8,11 +8,11 @@ const ProductCard = ({ imageUrl, name, type, sizes, quality, pdf }: ProductCardP
             <div className='product_details'>
                 <p className='product_name'>{name}</p>
                 <p className=' product_type'>{type}</p>
-                <div className='flex justify-between items-center gap-4'>
-                    <div className='flex gap-1 max-w-fit overflow-x-auto'>
+                <div className='flex justify-between items-end gap-4'>
+                    <div className='flex flex-wrap gap-1'>
                         {sizes?.map((size) => <p key={size} className='product_size'>{size}</p>)}
                     </div>
-                    <a href={pdf} target='_blank'><TbFileDownloadFilled className='text-2xl md:text-3xl xl:text-4xl' /></a>
+                    <a href={pdf} target='_blank'><TbFileDownloadFilled color='#252E44' className='text-3xl' /></a>
                 </div>
             </div>
             <p className='product_quality'>{quality}</p>

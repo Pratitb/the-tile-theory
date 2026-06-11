@@ -20,6 +20,24 @@ export default {
 				// button
 				buttonBg: '#000000',
 				buttonText: '#FFFFFF', // weight regular 400
+
+				// themeGold: '#e1c481', // gold
+				// themeNavy: '#111526', // navy
+				// themeNavy: '#252E44', // navy
+				// mutedGray: '#94a3b8', // muted gray
+				elevatedNavyBlue: '#1a1f35',
+				// subtleGold: '#e1c48126',
+				// subtleGold: '#e1c48140',
+				subtleGold: '#e1c48166',
+				subtleNavy: '#11152699',
+
+				themeGold: '#e7c978',
+				themeNavy: '#24304f',
+				pageBg: '#f5f5f4',
+				cardBg: '#ffffff',
+				mutedGray: '#64748b',
+				brdrprime: '#d8dde6',
+
 			},
 			fontFamily: {
 				brand: ['Google Sans', 'sans-serif'],

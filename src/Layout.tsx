@@ -35,7 +35,7 @@ const Layout = () => {
         }
     }
     return (
-        <div>
+        <div className='bg-pageBg'>
             <main className='container'>
                 {/* Brand, Desk Nav, Quote */}
                 <div className='flex justify-between items-center mb-5'>
