@@ -5,7 +5,7 @@ import ProductShowcase from "../components/productShowcase"
 
 const Outdoor = () => {
     const outdoorShowcase = useRef<HTMLDivElement | null>(null)
-    const [activePill, setActivePill] = useState('glossy')
+    const [activePill, setActivePill] = useState('all')
     const handleActivePill = (pill: string) => {
         setActivePill(pill)
     }

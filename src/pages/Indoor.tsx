@@ -5,7 +5,7 @@ import ProductShowcase from "../components/productShowcase"
 
 const Indoor = () => {
     const indoorShowcase = useRef<HTMLDivElement | null>(null)
-    const [activePill, setActivePill] = useState('glossy')
+    const [activePill, setActivePill] = useState('all')
     const handleActivePill = (pill: string) => {
         setActivePill(pill)
     }
