@@ -8,7 +8,7 @@ const ProductCard = ({ imageUrl, name, type, sizes, quality, pdf }: ProductCardP
             <div className='product_details'>
                 <p className='product_name'>{name}</p>
                 <p className=' product_type'>{type}</p>
-                <div className='flex justify-between items-end gap-4'>
+                <div className='flex justify-between items-end gap-4 mt-4'>
                     <div className='flex flex-wrap gap-1'>
                         {sizes?.map((size) => <p key={size} className='product_size'>{size}</p>)}
                     </div>
