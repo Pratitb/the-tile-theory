@@ -15,9 +15,9 @@ const Banner = ({ text1, text2, text3, getCategoriesScrollFn, getApplicationScro
 
     return (
         <div className='w-full min-h-[350px] lg:h-[450px] flex flex-col items-center justify-center gap-6 bg-banner bg-cover bg-no-repeat bg-bottom rounded-lg p-6 lg:p-14'>
-            <div className="max-w-[600px] text-white font-bold capitalize text-center text-3xl sm:text-4xl lg:text-5xl md:leading-[45px] lg:leading-[55px]" data-aos='fade-zoom-in'>
-                <span>{text1} &nbsp;</span>
-                <span className="text-themeGold">{text2} &nbsp;</span>
+            <div className="max-w-[600px] lg:max-w-[730px] text-white font-bold capitalize text-center text-3xl sm:text-4xl lg:text-5xl md:leading-[45px] lg:leading-[55px]" data-aos='fade-zoom-in'>
+                <span>{text1}&nbsp;</span>
+                <span className="text-themeGold">{text2}&nbsp;</span>
                 <span>{text3}</span>
             </div>
             <div className="flex gap-2 md:flex-row">

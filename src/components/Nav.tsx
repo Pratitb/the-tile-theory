@@ -11,7 +11,8 @@ const Nav = ({ getActiveFn, activeSt, getTileMenuAction }: NavProps) => {
     const { toggleTileMenu, activeTile } = useTileStore()
 
     return (
-        <div className='fixed bottom-4 left-[50%] translate-x-[-50%] md:relative md:left-auto md:bottom-auto md:translate-x-0 flex py-1 px-1 border-2 border-themeGold rounded-full z-10'>
+        <div className='fixed bottom-4 left-[50%] translate-x-[-50%] md:relative md:left-auto md:bottom-auto md:translate-x-0 flex py-1 px-1 rounded-full z-10 bg-white border border-themeNavy md:bg-transparent md:border-none'>
+            {/* {border-2 border-themeGold } */}
             {navLinks?.map((link: string) =>
                 <div key={link} className='flex items-center'>
                     <p className={`capitalize text-base rounded-full px-3 py-2 cursor-pointer ${link === activeSt ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`} onClick={() => getActiveFn(link ?? 'home')}>{link}</p>

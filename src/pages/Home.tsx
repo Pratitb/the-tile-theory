@@ -46,7 +46,7 @@ const Home = () => {
     // }, [allTiles, activePill])
 
     return (
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-8 md:gap-5'>
             {/* Banner */}
             <Banner categ apps text1={homeBannerText1} text2={homeBannerText2} text3={homeBannerText3} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
             {/* Categories */}
@@ -57,12 +57,12 @@ const Home = () => {
                 </div>
             </div>
             {/* Applications */}
-            <div className='pt-12 md:pt-12 flex flex-col gap-6' ref={homeApplications}>
+            <div className='pt-6 md:pt-12 flex flex-col gap-6' ref={homeApplications}>
                 <p className='head'>applications</p>
                 {/* pills */}
                 <Pills getPills={homePillTabs} getActivePill={handleActivePill} activeSt={activePill} />
                 {/* cards */}
-                <div className='py-2 max-h-[360px] md:max-h-[400px] lg:max-h-[440px] xl:max-h-[500px] overflow-y-auto'>
+                <div className='py-2 max-h-[400px] md:max-h-[460px] lg:max-h-[600px] xl:max-h-[680px] overflow-y-auto'>
                     {/* <Applications head='all' getApplicationData={} /> */}
                     <div ref={indoorApps}><Applications head='indoor' getApplicationData={indoorApplications} /></div>
                     <div ref={outdoorApps}><Applications head='outdoor' getApplicationData={outdoorApplications} /></div>

@@ -6,7 +6,7 @@ import type { CategoryCardProps } from '../utils/types'
 
 const CategoryCard = ({ title, includes, link }: CategoryCardProps) => {
     return (
-        <div className='w-full flex items-start justify-between gap-3 grow border border-brdrprime p-4 rounded-lg bg-cardBg'>
+        <div className='w-full flex items-start justify-between gap-3 grow border border-themeNavy p-4 rounded-lg bg-cardBg'>
             <div>
                 <p className='text-themeNavy font-semibold text-2xl xl:text-3xl capitalize'>{title}</p>
                 <p className='text-themeNavy text-sm'>{includes}</p>

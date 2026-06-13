@@ -31,7 +31,7 @@
     }
 
     .product_card {
-        @apply w-full flex-1 min-w-[240px] md:min-w-[31%] lg:min-w-[23%] max-w-[280px] rounded-lg border px-2 py-2 relative flex flex-col gap-2
+        @apply w-full flex-1 min-w-[240px] md:min-w-[31%] lg:min-w-[23%] max-w-[280px] border border-themeNavy rounded-lg px-2 py-2 relative flex flex-col gap-2
     }
 
     .product_image {
@@ -39,7 +39,7 @@
     }
 
     .product_quality {
-        @apply absolute top-5 right-5 bg-themeNavy text-white text-xs capitalize rounded-lg px-2 py-1 md:px-3
+        @apply absolute top-5 right-5 bg-themeNavy text-white text-xs capitalize rounded-lg px-2 py-1 md:px-2
     }
 
     .product_details {
@@ -63,7 +63,7 @@
     }
 
     .application_card {
-        @apply w-full flex-1 min-w-[240px] sm:min-w-[48%] max-w-[500px] rounded-lg border border-brdrprime px-2 py-2 relative flex flex-col gap-2
+        @apply w-full flex-1 min-w-[240px] sm:min-w-[48%] rounded-lg border border-themeNavy px-2 py-2 relative flex flex-col gap-2
     }
 
     .application_details {
