@@ -104,7 +104,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "Premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-1.pdf"
+        pdfUrl: "catalogues/indoor/ttt-glossy-vol-1.pdf"
     },
     {
         id: 2,
@@ -115,7 +115,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-2.pdf"
+        pdfUrl: "catalogues/indoor/ttt-glossy-vol-2.pdf"
     },
     {
         id: 3,
@@ -126,7 +126,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-glossy-vol-3.pdf"
+        pdfUrl: "catalogues/indoor/ttt-glossy-vol-3.pdf"
     },
     {
         id: 4,
@@ -137,7 +137,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-ultra-high-glossy.pdf"
+        pdfUrl: "catalogues/indoor/ttt-ultra-high-glossy.pdf"
     },
     {
         id: 5,
@@ -148,7 +148,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "Premium",
         category: "glossy",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-glossy-decor.pdf"
+        pdfUrl: "catalogues/indoor/ttt-glossy-decor.pdf"
     },
 
     // 2. MATT SERIES
@@ -161,7 +161,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "matt",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-matt.pdf"
+        pdfUrl: "catalogues/indoor/ttt-matt.pdf"
     },
     // 3. DIAMOND COLLECTION
     {
@@ -173,7 +173,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "diamond",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-diamond-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-diamond-punch.pdf"
     },
     // 4. KITKAT PUNCH
     {
@@ -185,7 +185,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "kitkat",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-kitkat-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-kitkat-punch.pdf"
     },
     // 5. LIMESTONE PUNCH
     {
@@ -197,7 +197,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "limestone",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-limestone-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-limestone-punch.pdf"
     },
     // 6. RAINBOW SERIES
     {
@@ -209,7 +209,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "rainbow",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-rainbow-series.pdf"
+        pdfUrl: "catalogues/indoor/ttt-rainbow-series.pdf"
     },
     // 7. STATUARIO
     {
@@ -221,7 +221,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "statuario",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-statuario.pdf"
+        pdfUrl: "catalogues/indoor/ttt-statuario.pdf"
     },
     // 8. GRANULA
     {
@@ -233,7 +233,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "granula",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-granula.pdf"
+        pdfUrl: "catalogues/indoor/ttt-granula.pdf"
     },
     // 9. NEXA
     {
@@ -245,7 +245,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "nexa",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-nexa-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-nexa-punch.pdf"
     },
     // 10. PIZZARO
     {
@@ -257,7 +257,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "pizzaro",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-pizzaro-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-pizzaro-punch.pdf"
     },
     // 11. WEBER
     {
@@ -269,7 +269,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "weber",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-weber-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-weber-punch.pdf"
     },
     // 12. CARVING
     {
@@ -281,7 +281,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "carving",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-carving-decor.pdf"
+        pdfUrl: "catalogues/indoor/ttt-carving-decor.pdf"
     },
     {
         id: 17,
@@ -292,7 +292,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "carving",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-carving.pdf"
+        pdfUrl: "catalogues/indoor/ttt-carving.pdf"
     },
     {
         id: 18,
@@ -303,7 +303,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "linear",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-linear-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-linear-punch.pdf"
     },
     {
         id: 19,
@@ -314,7 +314,7 @@ export const indoorProducts: TileProductKeys[] = [
         quality: "premium",
         category: "rustic",
         imageUrl: "banner-3.jpeg",
-        pdfUrl: "/catalogues/indoor/ttt-rustic-punch.pdf"
+        pdfUrl: "catalogues/indoor/ttt-rustic-punch.pdf"
     },
 ]
 
