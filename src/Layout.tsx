@@ -38,7 +38,7 @@ const Layout = () => {
         <div className='bg-pageBg'>
             <main className='container'>
                 {/* Brand, Desk Nav, Quote */}
-                <div className='flex justify-between items-center mb-5'>
+                <div className='flex justify-between items-center mb-3'>
                     <Brand />
                     {<Nav getActiveFn={handleActiveBtn} activeSt={activePage} getTileMenuAction={handleTileMenu} />}
                     <Button btnName="quote" />

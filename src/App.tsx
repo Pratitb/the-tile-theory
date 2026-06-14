@@ -34,7 +34,7 @@ const App = () => {
     }
     else if (cleanPath?.includes('tiles/slabs')) {
       updateActivePage('tiles')
-      updateActiveTile('bathroom & kitchen slabs')
+      updateActiveTile('kitchen & bathroom slabs')
     }
     else {
       updateActivePage(cleanPath === '' ? 'home' : cleanPath)

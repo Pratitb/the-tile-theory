@@ -63,7 +63,11 @@
     }
 
     .application_card {
-        @apply w-full flex-1 min-w-[240px] sm:min-w-[48%] rounded-lg border border-themeNavy px-2 py-2 relative flex flex-col gap-2
+        @apply relative w-full flex flex-col gap-2 min-w-[220px] border border-themeNavy rounded-lg px-2 py-2
+    }
+
+    .application_image {
+        @apply rounded-lg
     }
 
     .application_details {
@@ -91,9 +95,9 @@
 
     .container {
         width: 100%;
-        max-width: 1206px;
+        max-width: 1196px;
         margin: 0 auto;
-        padding: 20px 20px 80px 20px;
+        padding: 15px 15px 80px 15px;
     }
 
     @media screen and (min-width: 768px) {

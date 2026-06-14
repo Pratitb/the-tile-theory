@@ -1,7 +1,7 @@
 import { TbFileDownloadFilled } from 'react-icons/tb'
 import type { ProductCardProps } from '../utils/types'
 
-const ProductCard = ({ imageUrl, name, type, sizes, quality, pdf }: ProductCardProps) => {
+const ProductCard = ({ imageUrl, name, type, sizes, pdf }: ProductCardProps) => {
     return (
         <div className='product_card'>
             <img src={imageUrl} className='product_image' alt="" />
@@ -15,7 +15,7 @@ const ProductCard = ({ imageUrl, name, type, sizes, quality, pdf }: ProductCardP
                     <a href={pdf} target='_blank'><TbFileDownloadFilled color='#252E44' className='text-3xl' /></a>
                 </div>
             </div>
-            <p className='product_quality'>{quality}</p>
+            {/* <p className='product_quality'>{quality}</p> */}
         </div>
     )
 }
