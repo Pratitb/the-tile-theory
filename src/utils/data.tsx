@@ -15,8 +15,8 @@ export const slabs2 = `slab tiles.`
 export const tiles3 = `find all types of premium tiles here.`
 
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
-export const tileLinks: string[] = ['indoor', 'outdoor', 'bathroom & kitchen slabs']
-export const homePillTabs = ['indoor', 'outdoor', 'bathroom & kitchen',]
+export const tileLinks: string[] = ['indoor', 'outdoor', 'kitchen & bathroom slabs']
+export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
 export const indoorPills = [
     'all',
     'carving',
@@ -37,7 +37,7 @@ export const indoorPills = [
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...', page: '/tiles/outdoor' },
-    { title: 'bathroom & kitchen slabs', includes: 'besides sink, platform...', page: '/tiles/slabs' },
+    { title: 'kitchen & bathroom slabs', includes: 'besides sink, platform...', page: '/tiles/slabs' },
 ]
 export const tileProducts: TileProductKeys[] = [
     {

@@ -19,7 +19,7 @@ const Slabs = () => {
         <>
             <Banner categ getCategoriesScrollFn={() => scrollSection(slabsShowcase)} text1={tiles1} text2={slabs2} text3={tiles3} />
             <div className="flex flex-col gap-4" ref={slabsShowcase}>
-                <ProductShowcase head="bathroom & kitchen slabs" whatPills={indoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
+                <ProductShowcase head="kitchen & bathroom slabs" whatPills={indoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
             </div>
         </>
     )

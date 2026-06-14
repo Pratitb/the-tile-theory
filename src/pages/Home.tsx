@@ -66,7 +66,7 @@ const Home = () => {
                     {/* <Applications head='all' getApplicationData={} /> */}
                     <div ref={indoorApps}><Applications head='indoor' getApplicationData={indoorApplications} /></div>
                     <div ref={outdoorApps}><Applications head='outdoor' getApplicationData={outdoorApplications} /></div>
-                    <div ref={slabApps}><Applications head='bathroom & kitchen' getApplicationData={slabApplications} /></div>
+                    <div ref={slabApps}><Applications head='kitchen & bathroom' getApplicationData={slabApplications} /></div>
                 </div>
             </div>
             {/* Bottom Banner */}
