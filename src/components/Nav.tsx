@@ -1,5 +1,6 @@
 import { useTileStore } from '../store/useTileStore'
 import { navLinks, tileLinks } from '../utils/data'
+import type { TileLinks } from '../utils/types'
 
 interface NavProps {
     getActiveFn: (btnName: string) => void
@@ -20,8 +21,8 @@ const Nav = ({ getActiveFn, activeSt, getTileMenuAction }: NavProps) => {
             )}
             {/* tiles menu */}
             {<div className={`absolute w-full text-center bg-pageBg border-2 border-themeGold bottom-[60px] sm:bottom-auto sm:top-[60px] left-0 rounded-[40px] px-4 py-4 flex flex-col gap-2 overflow-hidden ${toggleTileMenu ? 'h-[200px] opacity-100' : 'h-0 opacity-0'}`}>
-                {tileLinks?.map((link: string) => {
-                    return <p key={link} onClick={() => getTileMenuAction(link)} className={`border-2 border-themeGold whitespace-nowrap capitalize text-base rounded-full px-6 py-3 cursor-pointer ${activeTile?.includes(link) ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`}>{link}</p>
+                {tileLinks?.map((link: TileLinks) => {
+                    return <p key={link.name} onClick={() => getTileMenuAction(link.name)} className={`border-2 border-themeGold whitespace-nowrap capitalize text-base rounded-full px-6 py-3 cursor-pointer ${activeTile?.includes(link.name) ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`}>{link.name}</p>
                 })}
 
             </div>}

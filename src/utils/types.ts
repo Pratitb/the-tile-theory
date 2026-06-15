@@ -66,3 +66,8 @@ export interface ApplicationCardProps {
     type?: string
     desc?: string
 }
+
+export interface TileLinks {
+    name: string
+    path: string
+}

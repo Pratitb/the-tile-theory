@@ -85,6 +85,10 @@
     .highlight {
         @apply text-yellow-600
     }
+
+    .footer_head {
+        @apply flex-1 whitespace-nowrap font-semibold text-base capitalize
+    }
 }
 
 /* ---- Utilities Layer ---- */

@@ -4,17 +4,22 @@ import { indoorBanner2, indoorPills, indoorProducts, scrollSection, tiles1, tile
 import ProductShowcase from "../components/productShowcase"
 
 const Indoor = () => {
+
+    // STATES
     const indoorShowcase = useRef<HTMLDivElement | null>(null)
     const [activePill, setActivePill] = useState('all')
+
+    // FUNCTIONS
     const handleActivePill = (pill: string) => {
         setActivePill(pill)
     }
-    console.log(activePill, 'activePill')
     const filteredProducts = useMemo(() => {
         if (activePill == 'all') return indoorProducts
         const createFilter = indoorProducts?.filter((product) => activePill?.toLowerCase()?.includes(product?.category?.toLowerCase() ?? 'all'))
         return createFilter
     }, [activePill])
+
+    // JSX
     return (
         <>
             <Banner categ getCategoriesScrollFn={() => scrollSection(indoorShowcase)} text1={tiles1} text2={indoorBanner2} text3={tiles3} />

@@ -1,5 +1,5 @@
 import type { RefObject } from "react";
-import type { CategoryProps, TileProductKeys } from "./types";
+import type { CategoryProps, TileLinks, TileProductKeys } from "./types";
 
 export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
@@ -15,7 +15,7 @@ export const slabs2 = `slab tiles.`
 export const tiles3 = `find all types of premium tiles here.`
 
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
-export const tileLinks: string[] = ['indoor', 'outdoor', 'kitchen & bathroom slabs']
+export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
 export const indoorPills = [
     'all',
