@@ -21,10 +21,10 @@ export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
 export const pillars = [
-    { name: 'trusted', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <FaCircleCheck /> },
-    { name: 'honest', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <PiMicrophoneStageFill /> },
-    { name: 'on time', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <FaBusinessTime /> },
-    { name: 'premium', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <IoSparklesSharp /> }]
+    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
+    { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
+    { name: 'on time', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaBusinessTime /> },
+    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> }]
 export const indoorPills = [
     'all',
     'carving',
