@@ -71,3 +71,8 @@ export interface TileLinks {
     name: string
     path: string
 }
+export interface PillarKeys {
+    name?: string
+    desc?: string
+    icon?: ReactNode
+}

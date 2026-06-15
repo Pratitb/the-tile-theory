@@ -89,6 +89,10 @@
     .footer_head {
         @apply flex-1 whitespace-nowrap font-semibold text-base capitalize
     }
+
+    .about_head {
+        @apply text-2xl sm:text-3xl font-semibold capitalize mb-2 sm:min-w-[300px]
+    }
 }
 
 /* ---- Utilities Layer ---- */

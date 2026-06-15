@@ -1,5 +1,8 @@
 import type { RefObject } from "react";
 import type { CategoryProps, TileLinks, TileProductKeys } from "./types";
+import { FaBusinessTime, FaCircleCheck } from "react-icons/fa6";
+import { PiMicrophoneStageFill } from "react-icons/pi";
+import { IoSparklesSharp } from "react-icons/io5";
 
 export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
@@ -17,6 +20,11 @@ export const tiles3 = `find all types of premium tiles here.`
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
+export const pillars = [
+    { name: 'trusted', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <FaCircleCheck /> },
+    { name: 'honest', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <PiMicrophoneStageFill /> },
+    { name: 'on time', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <FaBusinessTime /> },
+    { name: 'premium', desc: 'test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc test desc  test desc', icon: <IoSparklesSharp /> }]
 export const indoorPills = [
     'all',
     'carving',
