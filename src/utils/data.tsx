@@ -42,6 +42,8 @@ export const indoorPills = [
     'weber',
 ]
 
+export const slabPills = ['all', 'marmi', 'calce']
+
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...', page: '/tiles/outdoor' },
@@ -349,6 +351,54 @@ export const indoorProducts: TileProductKeys[] = [
         category: "rustic",
         imageUrl: "products/indoor/rustic.png",
         pdfUrl: "catalogues/indoor/ttt-rustic-punch.pdf"
+    },
+]
+export const slabProducts: TileProductKeys[] = [
+    // 1. MAMRI
+    {
+        id: 1,
+        name: "Marmi Scuri (Dark Marbles)",
+        sizes: ["12mm", '15mm'],
+        type: "slabs",
+        desc: ".",
+        quality: "premium",
+        category: "marmi",
+        imageUrl: "products/kitchen-bathroom/scuri.png",
+        pdfUrl: "catalogues/kitchen-bathroom/ttt-marmi-scuri-dark-marbles.pdf"
+    },
+    {
+        id: 2,
+        name: "Marmi Nero (Black Marbles)",
+        sizes: ["12mm", '15mm'],
+        type: "slabs",
+        desc: ".",
+        quality: "premium",
+        category: "marmi",
+        imageUrl: "products/kitchen-bathroom/nero.png",
+        pdfUrl: "catalogues/kitchen-bathroom/ttt-marmi-nero-black-marbles.pdf"
+    },
+    {
+        id: 3,
+        name: "Marmi Chiari (Light Marbles)",
+        sizes: ["12mm", '15mm'],
+        type: "slabs",
+        desc: ".",
+        quality: "premium",
+        category: "marmi",
+        imageUrl: "products/kitchen-bathroom/chiari.png",
+        pdfUrl: "catalogues/kitchen-bathroom/ttt-marmi-chiari-light-marbles.pdf"
+    },
+    // 2. CALCE
+    {
+        id: 4,
+        name: "Calce (Soft Concrete Looks)",
+        sizes: ["12mm", '15mm',],
+        type: "slabs",
+        desc: ".",
+        quality: "premium",
+        category: "calce",
+        imageUrl: "products/kitchen-bathroom/calce.png",
+        pdfUrl: "catalogues/kitchen-bathroom/ttt-calce-soft-concrete looks.pdf"
     },
 ]
 
