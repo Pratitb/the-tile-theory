@@ -1,5 +1,5 @@
 import type { RefObject } from "react";
-import type { CategoryProps, TileLinks, TileProductKeys } from "./types";
+import type { CategoryProps, Tabkeys, TileLinks, TileProductKeys } from "./types";
 import { FaBusinessTime, FaCircleCheck } from "react-icons/fa6";
 import { PiMicrophoneStageFill } from "react-icons/pi";
 import { IoSparklesSharp } from "react-icons/io5";
@@ -20,6 +20,7 @@ export const tiles3 = `find all types of premium tiles here.`
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
+export const contactTabs: Tabkeys[] = [{ name: 'query', desc: 'query' }, { name: 'quotation', desc: 'quotation' }]
 export const pillars = [
     { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
     { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },

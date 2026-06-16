@@ -76,3 +76,8 @@ export interface PillarKeys {
     desc?: string
     icon?: ReactNode
 }
+
+export interface Tabkeys {
+    name: string
+    desc: string
+}
