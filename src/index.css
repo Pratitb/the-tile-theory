@@ -93,6 +93,18 @@
     .about_head {
         @apply text-2xl sm:text-3xl font-semibold capitalize mb-2 sm:min-w-[300px]
     }
+
+    .contact_label {
+        @apply text-secondaryText capitalize tracking-wide text-sm font-semibold mb-1
+    }
+
+    .contact_input {
+        @apply text-sm p-3 h-10 border-2 rounded-lg bg-pageBg focus:outline-none focus:shadow-none focus:border-themeNavy focus:ring-0
+    }
+
+    .contact_textarea {
+        @apply text-sm h-20 p-3 border-2 rounded-lg bg-pageBg focus:outline-none focus:border-themeNavy
+    }
 }
 
 /* ---- Utilities Layer ---- */
