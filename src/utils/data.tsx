@@ -42,8 +42,9 @@ export const indoorPills = [
     'rainbow',
     'weber',
 ]
-
+export const outdoorPills = ['all', 'decorative', 'stone', 'earthy', 'urban']
 export const slabPills = ['all', 'marmi', 'calce']
+
 
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
@@ -352,6 +353,58 @@ export const indoorProducts: TileProductKeys[] = [
         category: "rustic",
         imageUrl: "products/indoor/rustic.png",
         pdfUrl: "catalogues/indoor/ttt-rustic-punch.pdf"
+    },
+]
+export const outdoorProducts: TileProductKeys[] = [
+    // 1. DECORATIVE
+    {
+        id: 1,
+        name: "Decorative Featured",
+        sizes: ["16mm", '20mm', '30mm'],
+        type: "outdoor",
+        desc: ".",
+        quality: "premium",
+        category: "decorative",
+        imageUrl: "products/outdoor/scuri.png",
+        pdfUrl: "catalogues/outdoor/ttt-decorative-featured.pdf"
+    },
+
+    // 2. STONE
+    {
+        id: 2,
+        name: "Premium Stone Finishes",
+        sizes: ["16mm", '20mm', '30mm'],
+        type: "outdoor",
+        desc: ".",
+        quality: "premium",
+        category: "stone",
+        imageUrl: "products/outdoor/premium-stone.png",
+        pdfUrl: "catalogues/outdoor/ttt-premium-stone-finishes.pdf"
+    },
+
+    // 3. EARTHY
+    {
+        id: 3,
+        name: "Warm Earth Sandstone Look",
+        sizes: ["16mm", '20mm', '30mm'],
+        type: "outdoor",
+        desc: ".",
+        quality: "premium",
+        category: "earthy",
+        imageUrl: "products/outdoor/warm-earthy.png",
+        pdfUrl: "catalogues/outdoor/ttt-warm-earth-sandstone-look.pdf"
+    },
+    // 4. URBAN
+    {
+        id: 4,
+        name: "Urban Industrial Concrete",
+        sizes: ["16mm", '20mm', '30mm'],
+        type: "outdor",
+        desc: ".",
+        quality: "premium",
+        category: "urban",
+        imageUrl: "products/outdoor/calce.png",
+        pdfUrl: "catalogues/outdoor/ttt-urban-industrial-concrete.pdf"
     },
 ]
 export const slabProducts: TileProductKeys[] = [
