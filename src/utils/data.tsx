@@ -4,48 +4,22 @@ import { FaBusinessTime, FaCircleCheck } from "react-icons/fa6";
 import { PiMicrophoneStageFill } from "react-icons/pi";
 import { IoSparklesSharp } from "react-icons/io5";
 
+// HOME
+
+// bottom banner
 export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
+
+// main banner
 export const homeBannerText1 = `If you're looking for the`
 export const homeBannerText2 = `best tiles in australia,`
 export const homeBannerText3 = `you're at the right place.`
-export const indoorBannerText = `Find the best tiles for your indoor setting`
-
-export const tiles1 = `welcome to`
-export const indoorBanner2 = `indoor tiles.`
-export const outdoorBanner2 = `outdoor tiles.`
-export const slabs2 = `slab tiles.`
-export const tiles3 = `find all types of premium tiles here.`
 
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
-export const contactTabs: Tabkeys[] = [{ name: 'query', desc: 'query' }, { name: 'quotation', desc: 'quotation' }]
-export const pillars = [
-    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
-    { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
-    { name: 'on time', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaBusinessTime /> },
-    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> }]
-export const indoorPills = [
-    'all',
-    'carving',
-    'diamond collection',
-    'glossy',
-    'granula',
-    'kitkat',
-    'limestone',
-    'linear',
-    'matt series',
-    'nexa',
-    'pizzaro',
-    'rustic',
-    'rainbow',
-    'weber',
-]
-export const outdoorPills = ['all', 'decorative', 'stone', 'earthy', 'urban']
-export const slabPills = ['all', 'marmi', 'calce']
 
-
+// categories, applications
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...', page: '/tiles/outdoor' },
@@ -120,6 +94,19 @@ export const tileProducts: TileProductKeys[] = [
 
 
 ];
+
+// TILES
+export const tiles1 = `welcome to`
+export const indoorBanner2 = `indoor tiles.`
+export const outdoorBanner2 = `outdoor tiles.`
+export const slabs2 = `slab tiles.`
+export const tiles3 = `find all types of premium tiles here.`
+
+export const indoorPills = ['carving', 'diamond collection', 'glossy', 'granula', 'kitkat', 'limestone', 'linear', 'matt series', 'nexa', 'pizzaro', 'rustic', 'rainbow', 'weber',]
+export const outdoorPills = ['decorative', 'stone', 'earthy', 'urban']
+export const slabPills = ['marmi', 'calce']
+
+// products
 export const indoorProducts: TileProductKeys[] = [
     // 1. GLOSSY
     {
@@ -454,6 +441,57 @@ export const slabProducts: TileProductKeys[] = [
         imageUrl: "products/kitchen-bathroom/calce.png",
         pdfUrl: "catalogues/kitchen-bathroom/ttt-calce-soft-concrete looks.pdf"
     },
+]
+
+// CONTACT
+export const contactTabs: Tabkeys[] = [{ name: 'query', desc: 'query' }, { name: 'quotation', desc: 'quotation' }]
+export const formCategTabs = [{ name: 'indoor', desc: 'indoor' }, { name: 'outdoor', desc: 'outdoor' }, { name: 'kitchen & bathroom', desc: 'kitchen & bathroom' }]
+export const formIndoorPills: Tabkeys[] = [
+    { name: 'carving', desc: 'carving' },
+    { name: 'diamond collection', desc: 'diamond collection' },
+    { name: 'glossy', desc: 'glossy' },
+    { name: 'granula', desc: 'granula' },
+    { name: 'kitkat', desc: 'kitkat' },
+    { name: 'limestone', desc: 'limestone' },
+    { name: 'linear', desc: 'linear' },
+    { name: 'matt series', desc: 'matt series' },
+    { name: 'nexa', desc: 'nexa' },
+    { name: 'pizzaro', desc: 'pizzaro' },
+    { name: 'rustic', desc: 'rustic' },
+    { name: 'rainbow', desc: 'rainbow' },
+    { name: 'weber', desc: 'weber' }
+]
+export const formOutdoorPills: Tabkeys[] = [
+    { name: 'decorative', desc: 'decorative' },
+    { name: 'stone', desc: 'stone' },
+    { name: 'earthy', desc: 'earthy' },
+    { name: 'urban', desc: 'urban' }
+]
+export const formSlabPills: Tabkeys[] = [
+    { name: 'marmi', desc: 'marmi' },
+    { name: 'calce', desc: 'calce' }
+]
+export const indoorThickness: Tabkeys[] = [
+    { name: '9mm', desc: '9mm' }
+]
+
+export const outdoorThickness: Tabkeys[] = [
+    { name: '16mm', desc: '16mm' },
+    { name: '20mm', desc: '20mm' },
+    { name: '30mm', desc: '30mm' }
+]
+
+export const kitchenThickness: Tabkeys[] = [
+    { name: '12mm', desc: '12mm' },
+    { name: '15mm', desc: '15mm' }
+]
+
+// ABOUT
+export const pillars = [
+    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
+    { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
+    { name: 'on time', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaBusinessTime /> },
+    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> }
 ]
 
 export const scrollSection = (refElement: RefObject<HTMLDivElement | null>) => {

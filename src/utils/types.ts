@@ -6,6 +6,7 @@ export interface ButtonProps {
     leadingIcon?: ReactNode
     variation?: BtnVariations
     getActionFn?: () => void
+    btnType: "button" | "submit" | "reset"
 }
 
 export type BtnVariations = 'primary'
@@ -80,4 +81,14 @@ export interface PillarKeys {
 export interface Tabkeys {
     name: string
     desc: string
+}
+
+export const tabVariants = {
+    primary: `rounded-full border-themeNavy`,
+    secondary: `rounded-lg`,
+}
+
+export const tabContVariants = {
+    primary: `gap-2`,
+    secondary: `gap-1`
 }
