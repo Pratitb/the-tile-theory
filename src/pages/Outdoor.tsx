@@ -6,6 +6,9 @@ import ProductShowcase from "../components/productShowcase"
 const Outdoor = () => {
     const outdoorShowcase = useRef<HTMLDivElement | null>(null)
     const [activePill, setActivePill] = useState('all')
+
+    const updateOutdoorPills = ['all', ...outdoorPills]
+
     const handleActivePill = (pill: string) => {
         setActivePill(pill)
     }
@@ -18,7 +21,7 @@ const Outdoor = () => {
         <>
             <Banner categ getCategoriesScrollFn={() => scrollSection(outdoorShowcase)} text1={tiles1} text2={outdoorBanner2} text3={tiles3} />
             <div className="flex flex-col gap-4" ref={outdoorShowcase}>
-                <ProductShowcase head="outdoor tiles" whatPills={outdoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
+                <ProductShowcase head="outdoor tiles" whatPills={updateOutdoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
             </div>
         </>
     )

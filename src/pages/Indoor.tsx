@@ -9,6 +9,8 @@ const Indoor = () => {
     const indoorShowcase = useRef<HTMLDivElement | null>(null)
     const [activePill, setActivePill] = useState('all')
 
+    const updateIndoorPills = ['all', ...indoorPills]
+
     // FUNCTIONS
     const handleActivePill = (pill: string) => {
         setActivePill(pill)
@@ -24,7 +26,7 @@ const Indoor = () => {
         <>
             <Banner categ getCategoriesScrollFn={() => scrollSection(indoorShowcase)} text1={tiles1} text2={indoorBanner2} text3={tiles3} />
             <div className="flex flex-col gap-4" ref={indoorShowcase}>
-                <ProductShowcase head="indoor tiles" whatPills={indoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
+                <ProductShowcase head="indoor tiles" whatPills={updateIndoorPills} whatActivePill={handleActivePill} whatActiveBtn={activePill} getProducts={filteredProducts} />
             </div>
         </>
     )
