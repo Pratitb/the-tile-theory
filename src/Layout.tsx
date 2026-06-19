@@ -41,7 +41,7 @@ const Layout = () => {
                 <div className='flex justify-between items-center mb-3'>
                     <Brand />
                     {<Nav getActiveFn={handleActiveBtn} activeSt={activePage} getTileMenuAction={handleTileMenu} />}
-                    <Button btnName="quote" />
+                    <Button btnType='button' btnName="quote" />
                 </div>
                 <Outlet />
                 <Footer />

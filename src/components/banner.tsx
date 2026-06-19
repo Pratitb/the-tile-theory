@@ -21,8 +21,8 @@ const Banner = ({ text1, text2, text3, getCategoriesScrollFn, getApplicationScro
                 <span>{text3}</span>
             </div>
             <div className="flex gap-2 md:flex-row">
-                {categ && <Button btnName="categories" getActionFn={getCategoriesScrollFn} />}
-                {apps && <Button btnName="applications" getActionFn={getApplicationScrollFn} />}
+                {categ && <Button btnType="button" btnName="categories" getActionFn={getCategoriesScrollFn} />}
+                {apps && <Button btnType="button" btnName="applications" getActionFn={getApplicationScrollFn} />}
             </div>
         </div>
     )
