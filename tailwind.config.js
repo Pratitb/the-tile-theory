@@ -5,8 +5,7 @@ export default {
 		extend: {
 			colors: {
 				// background
-				// lightBg: '#FAFAFA',
-				lightBg: '#F5F5F5',
+				lightBg: '#FAFAFA',
 				darkBg: '#0A0A0A',
 
 				// card
@@ -21,10 +20,7 @@ export default {
 				buttonBg: '#000000',
 				buttonText: '#FFFFFF', // weight regular 400
 
-				// themeGold: '#e1c481', // gold
-				// themeNavy: '#111526', // navy
-				// themeNavy: '#252E44', // navy
-				// mutedGray: '#94a3b8', // muted gray
+
 				elevatedNavyBlue: '#1a1f35',
 				// subtleGold: '#e1c48126',
 				// subtleGold: '#e1c48140',

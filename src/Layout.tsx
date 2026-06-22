@@ -40,7 +40,7 @@ const Layout = () => {
         navigate('/contact')
     }
     return (
-        <div className='bg-pageBg'>
+        <div className='bg-lightBg'>
             <main className='container'>
                 {/* Brand, Desk Nav, Quote */}
                 <div className='flex justify-between items-center mb-3'>
