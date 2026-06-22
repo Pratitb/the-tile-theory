@@ -64,7 +64,7 @@ const Contact = () => {
 
 
                         {activeForm == 'quotation' && <form ref={quotationForm} action='https://submit-form.com/141Decj1m' method="post" className="flex flex-col gap-4 rounded-lg bg-card px-4 py-8">
-                            <p className="text-themeNavy text-2xl capitalize font-semibold">query form</p>
+                            <p className="text-themeNavy text-2xl capitalize font-semibold">quotation form</p>
                             <Input inpId="fullName" inpName="Name" getLabel="full name" toggleAutoComp="off" />
                             <Input inpId="email" inpName="Email" getLabel="email" toggleAutoComp="off" />
                             <Input inpId="contact" inpName="Contact" getLabel="contact number" inpType="number" toggleAutoComp="off" />

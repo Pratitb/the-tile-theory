@@ -8,7 +8,7 @@ import Nav from './components/Nav'
 
 const Layout = () => {
     const navigate = useNavigate()
-    const { updateTileMenuVisibility, setTileMenuVisibility, updateActiveTile, activePage, updateActivePage } = useTileStore()
+    const { updateTileMenuVisibility, setTileMenuVisibility, updateActiveTile, activePage, updateActivePage, updateActiveForm } = useTileStore()
 
     // FUNCTIONS --------------------------------------------------
     const handleActiveBtn = (btnName: string) => {
@@ -34,14 +34,19 @@ const Layout = () => {
             navigate(`/tiles/${link}`)
         }
     }
+
+    const handleRequestQuote = () => {
+        updateActiveForm('quotation')
+        navigate('/contact')
+    }
     return (
         <div className='bg-pageBg'>
             <main className='container'>
                 {/* Brand, Desk Nav, Quote */}
                 <div className='flex justify-between items-center mb-3'>
                     <Brand />
-                    {<Nav getActiveFn={handleActiveBtn} activeSt={activePage} getTileMenuAction={handleTileMenu} />}
-                    <Button btnType='button' btnName="quote" />
+                    <Nav getActiveFn={handleActiveBtn} activeSt={activePage} getTileMenuAction={handleTileMenu} />
+                    <Button btnType='button' btnName="request quotation" getActionFn={handleRequestQuote} />
                 </div>
                 <Outlet />
                 <Footer />

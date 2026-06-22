@@ -12,7 +12,7 @@ const Input = ({ inpId, getLabel, inpType, inpName, getPlaceHolder, toggleAutoCo
     return (
         <div className="flex flex-col">
             <label htmlFor={inpId} className="contact_label">{getLabel}</label>
-            <input type={inpType} name={inpName} id={inpId} placeholder={getPlaceHolder} autoComplete={toggleAutoComp} className="contact_input" />
+            <input type={inpType} name={inpName} id={inpId} placeholder={getPlaceHolder} autoComplete={toggleAutoComp} required className="contact_input" />
         </div>
     )
 }
