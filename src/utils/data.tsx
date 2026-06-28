@@ -485,16 +485,20 @@ export const kitchenThickness: Tabkeys[] = [
 ]
 
 // ABOUT
+export const aboutBanner = `Our promise is simple:`
+export const aboutBanner2 = `superior finish, strength, and aesthetic of luxury architectural tiles, but at a fraction of the cost`
 export const ourStory = `At The Tile Theory, we believe that exceptional design should be accessible. For too long, creating a premium space has forced a difficult compromise: paying an absolute fortune for luxury, high-end surfaces, or sacrificing durability and finish with standard mass-market imports. We set out to change that.`
 
 export const ourStory2 = `Thanks to our direct family connection to state-of-the-art manufacturing plants, we completely bypass the middleman and traditional supply chains.`
 
 export const ourStory3 = `Working straight with the source allows us to offer an extensive variety of bespoke, customizable options at highly competitive rates that you won't find anywhere else.`
 export const pillars = [
-    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
     { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
+    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
+    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> },
+
     { name: 'on time', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaBusinessTime /> },
-    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> }
+
 ]
 
 export const scrollSection = (refElement: RefObject<HTMLDivElement | null>) => {
