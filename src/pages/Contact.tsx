@@ -5,7 +5,7 @@ import Input from "../components/Input"
 import Textarea from "../components/Textarea"
 import Button from "../components/button"
 import Tabs from "../components/tabs"
-import { contactTabs, formCategTabs, formIndoorPills, formOutdoorPills, formSlabPills, indoorThickness, kitchenThickness, outdoorThickness } from "../utils/data"
+import { contactTabs, contDesc, contDesc2, formCategTabs, formIndoorPills, formOutdoorPills, formSlabPills, indoorThickness, kitchenThickness, outdoorThickness } from "../utils/data"
 import { useTileStore } from "../store/useTileStore"
 import { tabContVariants, tabVariants } from "../utils/types"
 import { useRef } from "react"
@@ -30,10 +30,14 @@ const Contact = () => {
 
     return (
         <>
-            <Banner text1="contact" />
+            <Banner text1="We would love to hear from you." />
             <div className="flex flex-col md:flex-row gap-4">
                 {/* LEFT SIDE **************************/}
                 <div className="flex flex-col w-full md:flex-1 min-w-0">
+                    <div className="flex flex-col gap-4 text-secondaryText font-semibold mb-6">
+                        <p className="">{contDesc}</p>
+                        <p className="">{contDesc2}</p>
+                    </div>
                     <Tabs tabs={contactTabs} getTabFn={handleActiveForm} activeTab={activeForm} tabVari={tabVariants?.primary} tabContVari={tabContVariants?.primary} />
                     {/* FORMS */}
                     <div className="mt-6">

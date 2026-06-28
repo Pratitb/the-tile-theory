@@ -10,16 +10,14 @@ import { IoSparklesSharp } from "react-icons/io5";
 export const quoteText = `Best quality, wide range of products, trusted, and end-to-end pre and post sales service.`
 export const quote2Text = `We deliver to all major states of Australia. (multiple options)`
 
-// main banner
-export const homeBannerText1 = `If you're looking for the`
-export const homeBannerText2 = `best tiles in australia,`
-export const homeBannerText3 = `you're at the right place.`
+// export const homeBannerText1 = `If you're looking for the`
+export const homeBannerText2 = `Australia's Destination for Premium Tiles.`
+export const homeBannerText3 = `Excellent quality meets intelligent pricing. Explore more`
 
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
 export const homePillTabs = ['indoor', 'outdoor', 'kitchen & bathroom',]
 
-// categories, applications
 export const categories: CategoryProps[] = [
     { title: 'indoor tiles', includes: 'wall, bathroom, floor tiles...', page: '/tiles/indoor' },
     { title: 'outdoor tiles', includes: 'backyard, frontyard, fascade, patio...', page: '/tiles/outdoor' },
@@ -106,7 +104,6 @@ export const indoorPills = ['carving', 'diamond collection', 'glossy', 'granula'
 export const outdoorPills = ['decorative', 'stone', 'earthy', 'urban']
 export const slabPills = ['marmi', 'calce']
 
-// products
 export const indoorProducts: TileProductKeys[] = [
     // 1. GLOSSY
     {
@@ -444,6 +441,9 @@ export const slabProducts: TileProductKeys[] = [
 ]
 
 // CONTACT
+export const contDesc = `Have a question about our collections, need styling advice, or want to check stock availability?`
+export const contDesc2 = `The Tile Theory team is ready to assist you. Drop us a message using the form below, and one of our tile experts will get back to you as soon as possible to help bring your vision to life.`
+
 export const contactTabs: Tabkeys[] = [{ name: 'query', desc: 'query' }, { name: 'quotation', desc: 'quotation' }]
 export const formCategTabs = [{ name: 'indoor', desc: 'indoor' }, { name: 'outdoor', desc: 'outdoor' }, { name: 'kitchen & bathroom', desc: 'kitchen & bathroom' }]
 export const formIndoorPills: Tabkeys[] = [
@@ -474,19 +474,22 @@ export const formSlabPills: Tabkeys[] = [
 export const indoorThickness: Tabkeys[] = [
     { name: '9mm', desc: '9mm' }
 ]
-
 export const outdoorThickness: Tabkeys[] = [
     { name: '16mm', desc: '16mm' },
     { name: '20mm', desc: '20mm' },
     { name: '30mm', desc: '30mm' }
 ]
-
 export const kitchenThickness: Tabkeys[] = [
     { name: '12mm', desc: '12mm' },
     { name: '15mm', desc: '15mm' }
 ]
 
 // ABOUT
+export const ourStory = `At The Tile Theory, we believe that exceptional design should be accessible. For too long, creating a premium space has forced a difficult compromise: paying an absolute fortune for luxury, high-end surfaces, or sacrificing durability and finish with standard mass-market imports. We set out to change that.`
+
+export const ourStory2 = `Thanks to our direct family connection to state-of-the-art manufacturing plants, we completely bypass the middleman and traditional supply chains.`
+
+export const ourStory3 = `Working straight with the source allows us to offer an extensive variety of bespoke, customizable options at highly competitive rates that you won't find anywhere else.`
 export const pillars = [
     { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
     { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
