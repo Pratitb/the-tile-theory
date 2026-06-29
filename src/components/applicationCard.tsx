@@ -1,11 +1,11 @@
 import type { ApplicationCardProps } from '../utils/types'
 
-const ApplicationCard = ({ imageUrl, type, desc }: ApplicationCardProps) => {
+const ApplicationCard = ({ name, imageUrl, type, desc }: ApplicationCardProps) => {
     return (
         <div className='application_card'>
             <img src={imageUrl} className='application_image' alt="" />
             <div className='application_details'>
-                {/* <p className='product_name'>{name}</p> */}
+                <p className='application_name'>{name}</p>
                 <p className='application_type'>{type}</p>
                 <p className='application_desc'>{desc}</p>
             </div>

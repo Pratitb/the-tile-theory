@@ -92,7 +92,7 @@ const Contact = () => {
                     <img src="logo.png" className="hidden md:flex rounded-lg" alt="" />
                     <div className="flex flex-col gap-2 text-themeNavy">
                         {/* CARD *************************/}
-                        <div className="flex gap-4 bg-card border rounded-lg p-4">
+                        <div className="flex gap-4 bg-card rounded-lg p-4">
                             <MdMarkEmailUnread className="text-themeGold text-xl" />
                             <div>
                                 <p className="capitalize">email</p>
@@ -100,7 +100,7 @@ const Contact = () => {
                             </div>
                         </div>
                         {/* CARD **************************/}
-                        <div className="flex gap-4 bg-card border rounded-lg p-4">
+                        <div className="flex gap-4 bg-card rounded-lg p-4">
                             <FaPhoneAlt className="text-themeGold text-xl" />
                             <div>
                                 <p className="capitalize">phone</p>

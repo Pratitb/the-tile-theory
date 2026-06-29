@@ -24,73 +24,70 @@ export const categories: CategoryProps[] = [
     { title: 'kitchen & bathroom slabs', includes: 'besides sink, platform...', page: '/tiles/slabs' },
 ]
 export const tileProducts: TileProductKeys[] = [
+    // indoor
     {
         id: 1,
-        name: "Statuary White Marble",
-        sizes: ["6mm", "9mm", "12mm"],
+        name: "Glossy Vol 2",
         type: "indoor",
-        desc: "A beautiful setup of tiles",
+        desc: "Mirror-like brilliance that reflects light to make spaces feel larger.",
+
         quality: "premium",
         category: "indoor",
-        imageUrl: "banner-3.jpeg"
+        imageUrl: "applications/indoor-1.png"
     },
     {
         id: 2,
-        name: "Rustic Slate Grey",
-        sizes: ["9mm", "12mm"],
+        name: "Statuary White Marble",
+        type: "indoor",
+        desc: "Classic white marble aesthetics with iconic, sweeping grey veining.",
+        quality: "premium",
+        category: "indoor",
+        imageUrl: "applications/indoor-2.png"
+    },
+
+    // outdoor
+    {
+        id: 3,
+        name: "Granite",
         type: "outdoor",
-        desc: "A beautiful setup of tiles",
+        desc: "Raw concrete and heavy stone-look tiles designed for modern outdoor living",
 
         quality: "budget",
         category: "outdoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 3,
-        name: "Calacatta Gold Quartz",
-        sizes: ["12mm"],
-        type: "slabs",
-        desc: "A beautiful setup of tiles",
-
-        quality: "premium",
-        category: " slabs",
-        imageUrl: "banner-3.jpeg"
+        imageUrl: "applications/outdoor-1.png"
     },
     {
         id: 4,
-        name: "Arctic Blue Gloss",
-        sizes: ["6mm", "9mm"],
-        type: "slabs",
-        desc: "A beautiful setup of tiles",
-
-        quality: "premium",
-        category: "slabs",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 5,
-        name: "Terrazzo Earth-Tone",
-        sizes: ["9mm"],
-        type: "indoor",
-        desc: "A beautiful setup of tiles",
-
-        quality: "premium",
-        category: "indoor",
-        imageUrl: "banner-3.jpeg"
-    },
-    {
-        id: 6,
-        name: "Concrete Ash Paver",
-        sizes: ["12mm"],
+        name: "Luna",
         type: "outdoor",
-        desc: "A beautiful setup of tiles",
+        desc: "A selection of sandstone-inspired tiles featuring soft quartz grains and warm, earthy tones.",
 
         quality: "budget",
         category: "outdoor",
-        imageUrl: "banner-3.jpeg"
+        imageUrl: "applications/outdoor-2.png"
     },
+    // slabs
+    {
+        id: 5,
+        name: "Marmi Chiari",
+        type: "slabs",
+        desc: "A refined collection of light marble-effect tiles, featuring crisp white and cream bases",
 
+        quality: "premium",
+        category: " slabs",
+        imageUrl: "applications/slabs-1.png"
+    },
+    {
+        id: 6,
+        name: "Marmi Chiari",
+        sizes: ["6mm", "9mm"],
+        type: "slabs",
+        desc: "A refined collection of light marble-effect tiles, featuring crisp white and cream bases",
 
+        quality: "premium",
+        category: "slabs",
+        imageUrl: "applications/slabs-2.png"
+    },
 ];
 
 // TILES

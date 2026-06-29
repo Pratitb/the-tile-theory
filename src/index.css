@@ -67,19 +67,23 @@
     }
 
     .application_image {
-        @apply rounded-lg
+        @apply rounded-lg min-h-[130px] sm:min-h-[180px] md:min-h-[216px] lg:min-h-[300px] xl:min-h-[355px]
     }
 
     .application_details {
-        @apply flex flex-col font-semibold capitalize bg-white border rounded-lg px-3 py-2 lg:py-3 xl:px-4
+        @apply flex flex-col capitalize bg-white border rounded-lg px-4 py-4 lg:py-6 xl:px-6
+    }
+
+    .application_name {
+        @apply text-themeGold font-bold text-lg xl:text-xl
     }
 
     .application_type {
-        @apply text-themeGold grow text-sm lg:text-xl
+        @apply text-secondaryText text-sm xl:text-base font-semibold grow mb-2
     }
 
     .application_desc {
-        @apply text-themeNavy text-sm lg:text-lg xl:text-xl font-semibold
+        @apply text-themeNavy text-sm font-medium sm:text-base xl:text-lg
     }
 
     .highlight {
