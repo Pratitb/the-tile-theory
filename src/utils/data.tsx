@@ -349,7 +349,7 @@ export const outdoorProducts: TileProductKeys[] = [
         desc: ".",
         quality: "premium",
         category: "decorative",
-        imageUrl: "products/outdoor/scuri.png",
+        imageUrl: "products/outdoor/decorative.png",
         pdfUrl: "catalogues/outdoor/ttt-decorative-featured.pdf"
     },
 
@@ -387,7 +387,7 @@ export const outdoorProducts: TileProductKeys[] = [
         desc: ".",
         quality: "premium",
         category: "urban",
-        imageUrl: "products/outdoor/calce.png",
+        imageUrl: "products/outdoor/urban.png",
         pdfUrl: "catalogues/outdoor/ttt-urban-industrial-concrete.pdf"
     },
 ]
