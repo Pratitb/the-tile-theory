@@ -12,7 +12,7 @@ export const quote2Text = `We deliver to all major states of Australia. (multipl
 
 // export const homeBannerText1 = `If you're looking for the`
 export const homeBannerText2 = `Australia's Destination for Premium Tiles.`
-export const homeBannerText3 = `Excellent quality meets intelligent pricing. Explore more`
+export const homeBannerText3 = `Excellent quality meets intelligent pricing. Explore more.`
 
 export const navLinks: string[] = ['home', 'tiles', 'contact', 'about']
 export const tileLinks: TileLinks[] = [{ name: 'indoor', path: '/tiles/indoor' }, { name: 'outdoor', path: '/tiles/outdoor' }, { name: 'kitchen & bathroom slabs', path: '/tiles/slabs' }]
@@ -442,7 +442,7 @@ export const contDesc = `Have a question about our collections, need styling adv
 export const contDesc2 = `The Tile Theory team is ready to assist you. Drop us a message using the form below, and one of our tile experts will get back to you as soon as possible to help bring your vision to life.`
 
 export const contactTabs: Tabkeys[] = [{ name: 'query', desc: 'query' }, { name: 'quotation', desc: 'quotation' }]
-export const formCategTabs = [{ name: 'indoor', desc: 'indoor' }, { name: 'outdoor', desc: 'outdoor' }, { name: 'kitchen & bathroom', desc: 'kitchen & bathroom' }]
+export const formCategTabs = [{ name: 'indoor', desc: 'indoor' }, { name: 'outdoor', desc: 'outdoor' }, { name: 'kitchen & bathroom slabs', desc: 'kitchen & bathroom slabs' }]
 export const formIndoorPills: Tabkeys[] = [
     { name: 'carving', desc: 'carving' },
     { name: 'diamond collection', desc: 'diamond collection' },

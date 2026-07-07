@@ -1,4 +1,4 @@
-import { homeBannerText2, homeBannerText3 } from "../utils/data"
+import { homeBannerText2 } from "../utils/data"
 import Brand from "./brand"
 import Copyright from "./copyright"
 import QuickLinks from "./quickLinks"
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex flex-col sm:flex-row items-center text-themeNavy sm:items-start md:justify-between gap-6 text-sm px-2 py-6 mt-8 border-t'>
             <div className="flex flex-col items-center gap-2">
                 <Brand />
-                <p className="text-center text-themeNavy text-sm capitalize max-w-[310px]">{homeBannerText2} {homeBannerText3}</p>
+                <p className="text-center text-themeNavy text-sm capitalize max-w-[310px]">{homeBannerText2}</p>
             </div>
             <QuickLinks />
             <ReachOut />

@@ -9,6 +9,8 @@ import { contactTabs, contDesc, contDesc2, formCategTabs, formIndoorPills, formO
 import { useTileStore } from "../store/useTileStore"
 import { tabContVariants, tabVariants } from "../utils/types"
 import { useRef } from "react"
+import { FaLaptopCode } from "react-icons/fa6"
+import ContactCard from "../components/contactCard"
 
 const Contact = () => {
     const queryForm = useRef<HTMLFormElement | null>(null)
@@ -81,7 +83,7 @@ const Contact = () => {
                             <Tabs tabs={formCategTabs} getTabFn={handleFormCategType} activeTab={formTileLocation} tabVari={tabVariants?.secondary} tabContVari={tabContVariants?.secondary} label="location of tile" />
                             <Tabs tabs={formTileLocation == 'indoor' ? formIndoorPills : formTileLocation == 'outdoor' ? formOutdoorPills : formSlabPills} getTabFn={handleFormTileType} activeTab={formTileType} tabVari={tabVariants?.secondary} tabContVari={tabContVariants?.secondary} label="tile type" />
                             <Tabs tabs={formTileLocation == 'indoor' ? indoorThickness : formTileLocation == 'outdoor' ? outdoorThickness : kitchenThickness} getTabFn={handleFormTileThick} activeTab={formTileThick} tabVari={tabVariants?.secondary} tabContVari={tabContVariants?.secondary} label="tile thickness" />
-                            <Input inpId="length" inpName="Tile Length" getLabel="approx quantity (meters)" inpType="number" toggleAutoComp="off" />
+                            <Input inpId="length" inpName="Tile Length" getLabel="approx quantity (sq.meters)" inpType="number" toggleAutoComp="off" />
                             <Textarea areaType="message" textAreaName="Quotation Message" />
                             <Button btnType="submit" btnName="submit quotation form" getActionFn={() => queryForm.current && queryForm.current.requestSubmit()} />
                         </form>}
@@ -90,23 +92,11 @@ const Contact = () => {
                 {/* RIGHT SIDE ************************/}
                 <div className="flex flex-col md:flex-1 gap-3">
                     <img src="logo.png" className="hidden md:flex rounded-lg" alt="" />
-                    <div className="flex flex-col gap-2 text-themeNavy">
+                    <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 text-themeNavy whitespace-nowrap">
                         {/* CARD *************************/}
-                        <div className="flex gap-4 bg-card rounded-lg p-4">
-                            <MdMarkEmailUnread className="text-themeGold text-xl" />
-                            <div>
-                                <p className="capitalize">email</p>
-                                <a href="mailto:thetiletheory@outlook.com" className="font-semibold">thetiletheory@outlook.com</a>
-                            </div>
-                        </div>
-                        {/* CARD **************************/}
-                        <div className="flex gap-4 bg-card rounded-lg p-4">
-                            <FaPhoneAlt className="text-themeGold text-xl" />
-                            <div>
-                                <p className="capitalize">phone</p>
-                                <a href="tel:+91-9876543210" className="font-semibold">+91-9876543210</a>
-                            </div>
-                        </div>
+                        <ContactCard icon={MdMarkEmailUnread} head="email" type="mail" value="thetiletheory@outlook.com" />
+                        <ContactCard icon={FaPhoneAlt} head="phone" type="tel" value="+61 448 312 513" />
+                        <ContactCard icon={FaLaptopCode} head="developed by:" type="link" value="https://pratitcodes.com" />
                     </div>
                 </div>
             </div>

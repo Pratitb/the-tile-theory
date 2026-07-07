@@ -48,7 +48,7 @@ const Home = () => {
     return (
         <div className='flex flex-col gap-8 md:gap-5'>
             {/* Banner */}
-            <Banner categ apps text2={homeBannerText2} text3={homeBannerText3} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
+            <Banner categ apps text2={homeBannerText2} subHead={homeBannerText3} getCategoriesScrollFn={handleCategoriesBtn} getApplicationScrollFn={handleApplicationsBtn} />
             {/* Categories */}
             <div className='pt-12 flex flex-col gap-6' ref={homeCategories}>
                 <p className='head'>categories</p>
