@@ -16,13 +16,13 @@ const Nav = ({ getActiveFn, activeSt, getTileMenuAction }: NavProps) => {
             {/* {border-2 border-themeGold } */}
             {navLinks?.map((link: string) =>
                 <div key={link} className='flex items-center'>
-                    <p className={`capitalize text-base rounded-full px-3 py-2 cursor-pointer ${link === activeSt ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`} onClick={() => getActiveFn(link ?? 'home')}>{link}</p>
+                    <p className={`capitalize text-base rounded-full px-3 py-3 cursor-pointer ${link === activeSt ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`} onClick={() => getActiveFn(link ?? 'home')}>{link}</p>
                 </div>
             )}
             {/* tiles menu */}
-            {<div className={`absolute w-full text-center bg-pageBg bottom-[60px] sm:bottom-auto sm:top-[60px] left-0 rounded-[40px] flex flex-col gap-2 overflow-hidden ${toggleTileMenu ? 'h-[220px] opacity-100 border-2 border-subtleNavy px-4 py-6' : 'h-0 opacity-0'}`}>
+            {<div className={`absolute w-full text-center bg-card bottom-[60px] sm:bottom-auto sm:top-[60px] left-0 rounded-[40px] flex flex-col gap-2 overflow-hidden ${toggleTileMenu ? 'h-[220px] opacity-100 border border-themeNavy px-4 py-6' : 'h-0 opacity-0'}`}>
                 {tileLinks?.map((link: TileLinks) => {
-                    return <p key={link.name} onClick={() => getTileMenuAction(link.name)} className={`border border-subtleNavy whitespace-nowrap capitalize text-base rounded-full px-6 py-3 cursor-pointer ${activeTile?.includes(link.name) ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`}>{link.name}</p>
+                    return <p key={link.name} onClick={() => getTileMenuAction(link.name)} className={`border border-themeNavy whitespace-nowrap capitalize text-base rounded-full px-6 py-3 cursor-pointer ${activeTile?.includes(link.name) ? 'bg-themeNavy text-themeGold font-bold' : 'text-themeNavy'}`}>{link.name}</p>
                 })}
 
             </div>}

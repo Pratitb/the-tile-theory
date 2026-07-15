@@ -490,11 +490,13 @@ export const ourStory2 = `Thanks to our direct family connection to state-of-the
 
 export const ourStory3 = `Working straight with the source allows us to offer an extensive variety of bespoke, customizable options at highly competitive rates that you won't find anywhere else.`
 export const pillars = [
-    { name: 'honest', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <PiMicrophoneStageFill /> },
-    { name: 'trusted', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaCircleCheck /> },
-    { name: 'premium', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <IoSparklesSharp /> },
+    { name: 'honest', desc: 'We believe in complete transparency. By bypassing traditional supply chains and partnering directly with our manufacturing plant, we eliminate hidden middleman markups. We provide honest, upfront pricing for world-class architectural surfaces.', icon: <PiMicrophoneStageFill /> },
+    {
+        name: 'trusted', desc: 'Our foundation is built on strong manufacturing roots and a deep understanding of tile craftsmanship. Architects, builders, and homeowners trust us to deliver consistent, high-grade materials backed by a steadfast commitment to your project\'s success', icon: <FaCircleCheck />
+    },
+    { name: 'premium', desc: 'We never compromise on craftsmanship. Our curated collections feature elite finishes and striking details that rival the world\'s most luxurious surfaces.We bring high- end, bespoke design within your reach without ever sacrificing quality', icon: <IoSparklesSharp /> },
 
-    { name: 'on time', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat corrupti temporibus eos consectetur vitae eligendi', icon: <FaBusinessTime /> },
+    { name: 'efficient', desc: 'We understand that your project schedules are critical. Because we have a direct connection to our supply chain from the manufacturing floor to your door, we ensure a seamless, efficient, and reliable delivery process to keep your build on track.', icon: <FaBusinessTime /> },
 
 ]
 
